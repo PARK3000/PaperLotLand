@@ -26,8 +26,8 @@ export function AboutSection() {
             <div className="relative">
               <div className="overflow-hidden rounded-lg bg-[#0891b2]/50 p-4">
                 <Image
-                  src="/images/team/casey-family.webp"
-                  alt="Casey Ryan, Las Vegas cash home buyer"
+                  src="/images/team/parker-gibbons.jpg"
+                  alt="Parker Gibbons, PaperLotLand"
                   width={400}
                   height={300}
                   className="rounded-lg object-cover"

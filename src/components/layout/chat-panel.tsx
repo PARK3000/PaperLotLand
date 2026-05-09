@@ -296,14 +296,14 @@ export function ChatPanel({ open, initialTab = 'chat', onClose }: ChatPanelProps
         {/* Header */}
         <div className="flex shrink-0 items-center gap-3 rounded-t-2xl bg-[var(--color-primary)] px-4 py-3 lg:rounded-t-2xl">
           <Image
-            src="/images/team/casey-ryan.jpg"
+            src="/images/team/parker-gibbons.jpg"
             alt="Jamie Kirk"
             width={36}
             height={36}
             className="h-9 w-9 rounded-full object-cover ring-2 ring-white/40"
           />
           <div className="min-w-0 flex-1">
-            <p className="text-sm font-bold leading-tight text-white">Casey Ryan</p>
+            <p className="text-sm font-bold leading-tight text-white">Parker Gibbons</p>
             <p className="truncate text-xs text-white/70">PaperLotLand</p>
           </div>
           <button

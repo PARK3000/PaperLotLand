@@ -81,7 +81,7 @@ export function AnswerFirstPageTemplate({ data }: Props) {
         publishedAt={data.publishedDate}
         updatedAt={data.lastUpdated || data.publishedDate}
         url={pageUrl}
-        author={data.reviewedBy?.name || 'Casey Ryan'}
+        author={data.reviewedBy?.name || 'Parker Gibbons'}
       />
       {data.faqs.length > 0 && <FAQSchema faqs={data.faqs} />}
 

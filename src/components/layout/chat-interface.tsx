@@ -39,7 +39,7 @@ type ExtractedFields = {
 
 const INITIAL_MESSAGE: ChatMessage = {
   role: 'assistant',
-  content: "Hi! I'm Casey with PaperLotLand 👋\n\nLooking to buy or sell land in the Las Vegas Valley? I can help connect you with our off-market network. What are you looking for?",
+  content: "Hi! I'm Parker with PaperLotLand 👋\n\nLooking to buy or sell land in the Las Vegas Valley? I can help connect you with our off-market network. What are you looking for?",
   ts: Date.now(),
 }
 
@@ -499,7 +499,7 @@ export function ChatInterface({ sessionToken, panelOpen, onSchedule, onCall }: C
               <div className="w-6 shrink-0">
                 {!isUser && showAvatar && (
                   <Image
-                    src="/images/team/casey-ryan.jpg"
+                    src="/images/team/parker-gibbons.jpg"
                     alt="Jamie"
                     width={24}
                     height={24}
@@ -559,7 +559,7 @@ export function ChatInterface({ sessionToken, panelOpen, onSchedule, onCall }: C
         {loading && (
           <div className="flex items-end gap-1.5">
             <Image
-              src="/images/team/casey-ryan.jpg"
+              src="/images/team/parker-gibbons.jpg"
               alt="Jamie"
               width={24}
               height={24}

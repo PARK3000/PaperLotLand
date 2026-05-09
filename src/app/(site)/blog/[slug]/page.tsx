@@ -20,7 +20,7 @@ import {
 import { SITE, BUSINESS, FOUNDER } from '@/lib/constants'
 
 const AUTHOR_PHOTOS: Record<string, string> = {
-  'Casey Ryan': '/images/team/casey-ryan.jpg',
+  'Parker Gibbons': '/images/team/parker-gibbons.jpg',
 }
 
 interface PageProps {

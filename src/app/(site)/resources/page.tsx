@@ -42,7 +42,7 @@ export default function ResourcesPage() {
                 Clark County&apos;s OpenWeb GIS portal (GISMO) is the primary parcel research tool for unincorporated Clark County — covering the Las Vegas Strip corridor, Enterprise, Spring Valley, and surrounding areas.
               </p>
               <a
-                href="https://gis.clark.nv.gov/openweb/"
+                href="https://maps.clarkcountynv.gov/openweb/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-lg bg-[#1C3550] px-5 py-2.5 text-sm font-bold text-white hover:bg-[#122336] transition-colors"

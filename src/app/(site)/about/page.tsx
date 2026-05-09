@@ -29,7 +29,7 @@ export default function AboutPage() {
           <div className="prose prose-slate max-w-none">
             <h2 className="text-2xl font-bold text-[#1C3550] mb-4">Why PaperLotLand Exists</h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              PaperLotLand was started by Casey Ryan — a Las Vegas land broker who spent years watching great parcels get marketed publicly at inflated prices, only to sit on the market for months before trading hands at a discount anyway.
+              PaperLotLand was started by Parker Gibbons — a Las Vegas land broker who spent years watching great parcels get marketed publicly at inflated prices, only to sit on the market for months before trading hands at a discount anyway.
             </p>
             <p className="text-slate-600 leading-relaxed mb-6">
               The inefficiency was obvious: the best land deals happen off-market, between people who know what they&apos;re doing. The challenge was connecting the right buyers with the right sellers before anyone hit the MLS.

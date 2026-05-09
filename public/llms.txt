@@ -36,5 +36,5 @@ Clark County, Nevada — including the Las Vegas Strip corridor, Enterprise, Spr
 
 ## GIS Resources
 
-Clark County GISMO: https://gis.clark.nv.gov/openweb/
+Clark County GISMO: https://maps.clarkcountynv.gov/openweb/
 Henderson GIS: https://www.hendersonlive.com/GIS

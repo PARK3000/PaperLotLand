@@ -155,9 +155,9 @@ export const JURISDICTIONS = [
   {
     slug: 'clark-county',
     name: 'Clark County',
-    gisUrl: 'https://gis.clark.nv.gov/openweb/',
-    zoningUrl: 'https://www.clarkcountynv.gov/government/departments/community_services/planning___development/zoning.php',
-    codeUrl: 'https://www.clarkcountynv.gov/government/departments/community_services/planning___development/development_code.php',
+    gisUrl: 'https://maps.clarkcountynv.gov/openweb/',
+    zoningUrl: 'https://www.clarkcountynv.gov/government/departments/comprehensive_planning_department/divisions/current_planning_division/',
+    codeUrl: 'https://www.clarkcountynv.gov/government/departments/comprehensive_planning_department/divisions/current_planning_division/',
     logoSrc: '/images/resources/clark-county-logo.png',
     description: 'Clark County unincorporated areas, including Enterprise, Spring Valley, and the Strip corridor.',
     highlights: ['GISMO parcel search', 'Unified Development Code (UDC)', 'Enterprise and Spring Valley planning districts', 'Building permit portal'],
@@ -205,24 +205,24 @@ export const JURISDICTIONS = [
 ]
 
 export const CLOSED_SALES = [
-  { id: 1, title: 'NLV Industrial Pad — 4.2 Acres', type: 'Industrial', size: '4.2 acres', location: 'North Las Vegas', imageSrc: '/images/lots/lot-1.jpg', gisUrl: 'https://gis.clark.nv.gov/openweb/' },
-  { id: 2, title: 'Henderson Multifamily Site — 1.8 Acres', type: 'Multifamily', size: '1.8 acres', location: 'Henderson', imageSrc: '/images/lots/lot-2.jpg', gisUrl: 'https://gis.clark.nv.gov/openweb/' },
-  { id: 3, title: 'Enterprise Commercial Corner — 0.9 Acres', type: 'Commercial', size: '0.9 acres', location: 'Enterprise', imageSrc: '/images/lots/lot-3.jpg', gisUrl: 'https://gis.clark.nv.gov/openweb/' },
-  { id: 4, title: 'Spring Valley Residential — 12 Lots', type: 'Residential', size: '12 lots', location: 'Spring Valley', imageSrc: '/images/lots/lot-4.jpg', gisUrl: 'https://gis.clark.nv.gov/openweb/' },
-  { id: 5, title: 'NLV Retail Pad — 1.1 Acres', type: 'Commercial', size: '1.1 acres', location: 'North Las Vegas', imageSrc: '/images/lots/lot-5.jpg', gisUrl: 'https://gis.clark.nv.gov/openweb/' },
-  { id: 6, title: 'Unincorporated Clark — 22 Acres Raw', type: 'Raw Land', size: '22 acres', location: 'Clark County', imageSrc: '/images/lots/lot-6.jpg', gisUrl: 'https://gis.clark.nv.gov/openweb/' },
-  { id: 7, title: 'Downtown LV Mixed-Use Pad', type: 'Mixed Use', size: '0.6 acres', location: 'City of Las Vegas', imageSrc: '/images/lots/lot-7.jpg', gisUrl: 'https://gis.clark.nv.gov/openweb/' },
-  { id: 8, title: 'Henderson Industrial — 8.3 Acres', type: 'Industrial', size: '8.3 acres', location: 'Henderson', imageSrc: '/images/lots/lot-8.jpg', gisUrl: 'https://gis.clark.nv.gov/openweb/' },
-  { id: 9, title: 'NLV Flex / Warehouse Site', type: 'Industrial', size: '3.5 acres', location: 'North Las Vegas', imageSrc: '/images/lots/lot-9.jpg', gisUrl: 'https://gis.clark.nv.gov/openweb/' },
+  { id: 1, title: 'NLV Industrial Pad — 4.2 Acres', type: 'Industrial', size: '4.2 acres', location: 'North Las Vegas', imageSrc: '/images/lots/lot-1.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
+  { id: 2, title: 'Henderson Multifamily Site — 1.8 Acres', type: 'Multifamily', size: '1.8 acres', location: 'Henderson', imageSrc: '/images/lots/lot-2.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
+  { id: 3, title: 'Enterprise Commercial Corner — 0.9 Acres', type: 'Commercial', size: '0.9 acres', location: 'Enterprise', imageSrc: '/images/lots/lot-3.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
+  { id: 4, title: 'Spring Valley Residential — 12 Lots', type: 'Residential', size: '12 lots', location: 'Spring Valley', imageSrc: '/images/lots/lot-4.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
+  { id: 5, title: 'NLV Retail Pad — 1.1 Acres', type: 'Commercial', size: '1.1 acres', location: 'North Las Vegas', imageSrc: '/images/lots/lot-5.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
+  { id: 6, title: 'Unincorporated Clark — 22 Acres Raw', type: 'Raw Land', size: '22 acres', location: 'Clark County', imageSrc: '/images/lots/lot-6.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
+  { id: 7, title: 'Downtown LV Mixed-Use Pad', type: 'Mixed Use', size: '0.6 acres', location: 'City of Las Vegas', imageSrc: '/images/lots/lot-7.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
+  { id: 8, title: 'Henderson Industrial — 8.3 Acres', type: 'Industrial', size: '8.3 acres', location: 'Henderson', imageSrc: '/images/lots/lot-8.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
+  { id: 9, title: 'NLV Flex / Warehouse Site', type: 'Industrial', size: '3.5 acres', location: 'North Las Vegas', imageSrc: '/images/lots/lot-9.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
 ]
 
 export const TEAM = [
   {
-    name: 'Casey Ryan',
+    name: 'Parker Gibbons',
     title: 'Founder & Land Broker',
-    bio: 'Casey Ryan has been buying, selling, and brokering land in the Las Vegas Valley for over 15 years. He built PaperLotLand to give developers and investors a direct, off-market channel to move land — without the delays and exposure of the public MLS.',
-    imageSrc: '/images/team/casey-ryan.jpg',
-    linkedin: 'https://www.linkedin.com/in/the-casey-ryan/',
+    bio: 'Parker Gibbons has been buying, selling, and brokering land in the Las Vegas Valley for over 15 years. He built PaperLotLand to give developers and investors a direct, off-market channel to move land — without the delays and exposure of the public MLS.',
+    imageSrc: '/images/team/parker-gibbons.jpg',
+    linkedin: 'https://www.linkedin.com/in/the-parker-gibbons/',
   },
 ]
 
@@ -295,9 +295,9 @@ export const OFFICES = [
 export const BBB = { rating: '5.0', reviewCount: 0, url: '' }
 
 export const DEFAULT_REVIEWER = {
-  name: 'Casey Ryan',
+  name: 'Parker Gibbons',
   role: 'Founder & Land Broker',
-  image: '/images/team/casey-ryan.jpg',
+  image: '/images/team/parker-gibbons.jpg',
   url: undefined as string | undefined,
   license: undefined as string | undefined,
 }

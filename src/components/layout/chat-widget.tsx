@@ -96,7 +96,7 @@ export function ChatWidget() {
         >
           {/* Jamie avatar */}
           <Image
-            src="/images/team/casey-ryan.jpg"
+            src="/images/team/parker-gibbons.jpg"
             alt="Jamie Kirk"
             fill
             sizes="(min-width: 1024px) 70px, 58px"
