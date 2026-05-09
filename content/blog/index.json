@@ -1,0 +1,44 @@
+{
+  "categories": ["Land Development", "Zoning Resources", "Market Analysis"],
+  "posts": [
+    {
+      "slug": "understanding-clark-county-zoning-codes",
+      "title": "Understanding Clark County Zoning Codes: A Developer's Guide",
+      "excerpt": "A practical guide to navigating Clark County's zoning code — from zoning districts and permitted uses to setbacks, FAR, and height limits for land development in the Las Vegas Valley.",
+      "category": "Zoning Resources",
+      "author": "Casey Ryan",
+      "publishedAt": "2026-04-15",
+      "updatedAt": "2026-04-15",
+      "readTime": "8 min read",
+      "featured": true,
+      "image": "/images/blog/clark-county-zoning.jpg",
+      "imageAlt": "Clark County zoning map showing residential and commercial districts"
+    },
+    {
+      "slug": "how-to-find-off-market-land-deals-las-vegas",
+      "title": "How to Find Off-Market Land Deals in Las Vegas",
+      "excerpt": "The best land deals in the Las Vegas Valley never hit Zillow or CoStar. Here's how experienced developers and investors source off-market parcels before they go anywhere else.",
+      "category": "Land Development",
+      "author": "Casey Ryan",
+      "publishedAt": "2026-04-08",
+      "updatedAt": "2026-04-08",
+      "readTime": "6 min read",
+      "featured": false,
+      "image": "/images/blog/off-market-land-las-vegas.jpg",
+      "imageAlt": "Aerial view of Las Vegas Valley land parcels"
+    },
+    {
+      "slug": "las-vegas-land-development-outlook-2026",
+      "title": "Las Vegas Land Development Outlook: What to Expect in 2026",
+      "excerpt": "Southern Nevada's land market is evolving fast — driven by industrial demand, multifamily pressure, and constrained supply in unincorporated Clark County. Here's what developers and investors should watch.",
+      "category": "Market Analysis",
+      "author": "Casey Ryan",
+      "publishedAt": "2026-04-01",
+      "updatedAt": "2026-04-01",
+      "readTime": "7 min read",
+      "featured": false,
+      "image": "/images/blog/las-vegas-development-outlook.jpg",
+      "imageAlt": "Las Vegas skyline with construction cranes showing development activity"
+    }
+  ]
+}

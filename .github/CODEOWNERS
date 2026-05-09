@@ -1,0 +1,20 @@
+# Code owners
+#
+# These paths require explicit human review on every PR. Most importantly:
+# the agentic monitoring loop should never modify its own guardrails through
+# an auto-fix. Locking these paths ensures any change to detection, fix
+# allowlist, or workflow definitions hits a human merge gate even when
+# branch protection is on with auto-merge.
+
+# Agentic monitoring — entire scope locked
+/scripts/agents/                @jmshoe
+/.github/workflows/agents-*.yml @jmshoe
+/docs/agents/                   @jmshoe
+
+# CI / repo plumbing
+/.github/workflows/ci.yml       @jmshoe
+/.github/CODEOWNERS             @jmshoe
+
+# Hard build-time guards (URL canonical form, blog validation)
+/src/lib/config.ts              @jmshoe
+/scripts/setup-db.ts            @jmshoe

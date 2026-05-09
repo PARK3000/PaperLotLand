@@ -1,0 +1,56 @@
+{
+  "$schema": "./schemas/site.schema.json",
+
+  "siteName": "PaperLotLand",
+  "siteTagline": "Las Vegas Land Developer & Broker Network",
+  "siteDescription": "Off-market land deals in the Las Vegas Valley. Access closed sales, GIS data, and zoning resources. Join the network of developers and brokers who move land in Clark County.",
+  "siteUrl": "https://paperlotland.com",
+
+  "theme": {
+    "primaryColor": "#1C3550",
+    "secondaryColor": "#122336",
+    "accentColor": "#C97D2E",
+    "backgroundColor": "#ffffff",
+    "textColor": "#1C3550"
+  },
+
+  "fonts": {
+    "heading": "Manrope",
+    "body": "Manrope"
+  },
+
+  "logo": {
+    "src": "/images/logo.svg",
+    "alt": "PaperLotLand",
+    "width": 200,
+    "height": 40
+  },
+
+  "favicon": "/favicon.ico",
+
+  "seo": {
+    "defaultTitle": "PaperLotLand | Off-Market Land Deals in Las Vegas",
+    "titleTemplate": "%s | PaperLotLand",
+    "defaultDescription": "Access off-market land deals in the Las Vegas Valley. Closed sales gallery, Clark County GIS data, zoning resources, and the developer & broker network for Clark County land.",
+    "defaultKeywords": [
+      "las vegas land for sale",
+      "off market land deals las vegas",
+      "clark county lots for sale",
+      "las vegas land developer",
+      "land broker las vegas",
+      "nevada vacant land",
+      "clark county land development"
+    ],
+    "ogImage": "/images/og-image.jpg",
+    "twitterHandle": ""
+  },
+
+  "features": {
+    "blog": true,
+    "contactForm": true,
+    "newsletter": false,
+    "testimonials": false,
+    "faq": true,
+    "chat": false
+  }
+}

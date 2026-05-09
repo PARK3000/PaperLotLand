@@ -1,0 +1,76 @@
+{
+  "$schema": "./schemas/business.schema.json",
+
+  "name": "PaperLotLand",
+  "legalName": "PaperLotLand LLC",
+  "type": "RealEstateBroker",
+
+  "contact": {
+    "phone": "7024656111",
+    "phoneDisplay": "(702) 465-6111",
+    "email": "parker@paperlotland.com",
+    "supportEmail": "parker@paperlotland.com"
+  },
+
+  "address": {
+    "street": "9159 W Flamingo Rd",
+    "suite": "#110",
+    "city": "Las Vegas",
+    "state": "NV",
+    "zip": "89147",
+    "country": "US"
+  },
+
+  "hours": {
+    "monday": "9:00 AM – 5:00 PM",
+    "tuesday": "9:00 AM – 5:00 PM",
+    "wednesday": "9:00 AM – 5:00 PM",
+    "thursday": "9:00 AM – 5:00 PM",
+    "friday": "9:00 AM – 5:00 PM",
+    "saturday": "By Appointment",
+    "sunday": "Closed"
+  },
+
+  "hoursDisplay": "Mon–Fri 9 AM – 5 PM",
+
+  "serviceArea": "Clark County, Las Vegas, Henderson, North Las Vegas, Boulder City, Summerlin, Spring Valley, Enterprise",
+  "yearEstablished": "2020",
+
+  "social": {
+    "facebook": "",
+    "instagram": "",
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/in/the-casey-ryan/",
+    "youtube": "",
+    "tiktok": ""
+  },
+
+  "citations": {
+    "googleBusinessProfile": "",
+    "bingPlaces": ""
+  },
+
+  "owner": {
+    "name": "Casey Ryan",
+    "social": {
+      "facebook": "https://www.facebook.com/thecaseyryan",
+      "instagram": "https://www.instagram.com/the_caseyryan",
+      "linkedin": "https://www.linkedin.com/in/the-casey-ryan/"
+    }
+  },
+
+  "geo": {
+    "latitude": 36.1146,
+    "longitude": -115.2828,
+    "serviceArea": [
+      "Las Vegas",
+      "Henderson",
+      "North Las Vegas",
+      "Summerlin",
+      "Boulder City",
+      "Spring Valley",
+      "Enterprise",
+      "Clark County"
+    ]
+  }
+}

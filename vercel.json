@@ -1,0 +1,12 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/abandoned-leads",
+      "schedule": "* * * * *"
+    },
+    {
+      "path": "/api/cron/funnel-report",
+      "schedule": "0 16 * * 1"
+    }
+  ]
+}

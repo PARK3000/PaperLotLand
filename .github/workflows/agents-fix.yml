@@ -1,0 +1,176 @@
+name: Agents — Fix & Verify
+
+# Event-driven fix and verify workflow.
+#
+# Triggers:
+#   - Issue labeled `auto-fix` (only runs if MONITOR_AUTOFIX=true repo variable)
+#   - Issue comment containing `@claude` on an agent-authored issue
+#   - PR opened from a `claude/*` branch (verify always runs)
+#
+# Plan: docs/plans/2026-04-28-feat-closed-loop-agentic-monitoring-plan.md
+# Runbook: docs/agents/README.md
+
+on:
+  issues:
+    types: [labeled]
+  issue_comment:
+    types: [created]
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+concurrency:
+  group: agent-fix-${{ github.event.issue.number || github.event.pull_request.number }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  id-token: write
+
+jobs:
+  fix:
+    name: Fix
+    runs-on: ubuntu-latest
+    if: |
+      (github.event_name == 'issues'
+        && github.event.action == 'labeled'
+        && github.event.label.name == 'auto-fix'
+        && vars.MONITOR_AUTOFIX == 'true')
+      || (github.event_name == 'issue_comment'
+        && contains(github.event.comment.body, '@claude')
+        && github.event.issue.pull_request == null)
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: Configure git
+        run: |
+          git config user.name "claude-code[bot]"
+          git config user.email "claude-code[bot]@users.noreply.github.com"
+
+      - name: Load fix prompt
+        id: prompt
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          {
+            echo 'body<<__EOF_PROMPT__'
+            cat scripts/agents/prompts/fix.md
+            printf '\n---\n## Issue context\n\nIssue number: %s\nIssue title: %s\n\nIssue body:\n\n' "$ISSUE_NUMBER" "$ISSUE_TITLE"
+            printf '%s\n' "$ISSUE_BODY"
+            echo '__EOF_PROMPT__'
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Run Claude Code fix
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: ${{ steps.prompt.outputs.body }}
+          claude_args: |
+            {
+              "model": "claude-opus-4-5",
+              "tools": { "read_file": true, "write_file": true, "bash": true },
+              "auto_commit": true
+            }
+          branch_prefix: 'claude/'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Validate diff against allowlist
+        if: success()
+        run: node scripts/agents/check-diff.mjs
+        env:
+          ISSUE_LABELS: ${{ toJson(github.event.issue.labels) }}
+
+  verify:
+    name: Verify (adversarial)
+    runs-on: ubuntu-latest
+    if: |
+      github.event_name == 'pull_request'
+      && startsWith(github.head_ref, 'claude/')
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: Resolve linked issue
+        id: linked
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PR_BODY=$(gh pr view ${{ github.event.pull_request.number }} --json body --jq .body)
+          ISSUE_NUM=$(echo "$PR_BODY" | grep -oiE 'fixes #[0-9]+' | head -1 | grep -oE '[0-9]+' || true)
+          echo "issue_number=${ISSUE_NUM}" >> "$GITHUB_OUTPUT"
+
+      - name: Generate diff and load issue body
+        id: ctx
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git diff origin/main...HEAD > /tmp/pr.diff
+          if [ -n "${{ steps.linked.outputs.issue_number }}" ]; then
+            gh issue view ${{ steps.linked.outputs.issue_number }} --json body --jq .body > /tmp/issue.md
+          else
+            echo "(no linked issue)" > /tmp/issue.md
+          fi
+
+      - name: Load verify prompt
+        id: prompt
+        run: |
+          {
+            echo 'body<<__EOF_PROMPT__'
+            cat scripts/agents/prompts/verify.md
+            echo
+            echo "---"
+            echo "## Linked issue body"
+            echo
+            cat /tmp/issue.md
+            echo
+            echo "## PR diff"
+            echo
+            echo '```diff'
+            cat /tmp/pr.diff
+            echo '```'
+            echo '__EOF_PROMPT__'
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Run adversarial verify
+        id: verify
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: ${{ steps.prompt.outputs.body }}
+          allowed_bots: '*'
+          claude_args: |
+            {
+              "model": "claude-opus-4-5",
+              "tools": { "read_file": true, "bash": true }
+            }
+
+      - name: Parse verdict
+        run: node scripts/agents/check-verify.mjs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          ISSUE_NUMBER: ${{ steps.linked.outputs.issue_number }}
+          VERDICT_PATH: /tmp/verdict.json
+          SLACK_AGENT_WEBHOOK_URL: ${{ secrets.SLACK_AGENT_WEBHOOK_URL }}

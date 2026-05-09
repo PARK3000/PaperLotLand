@@ -1,0 +1,112 @@
+{
+  "$comment": "Source of truth for the agentic monitoring loop. Edited by humans, read by detect.ts and the fix workflow. Keep flat and obvious — no logic, just policy.",
+
+  "labels": {
+    "fix:meta": {
+      "color": "0E8A16",
+      "description": "Page metadata regression (title, description, OG)"
+    },
+    "fix:alt": {
+      "color": "0E8A16",
+      "description": "Missing or non-semantic image alt text"
+    },
+    "auto-fix": {
+      "color": "FBCA04",
+      "description": "Cleared for unattended fix. Auto-runs only when MONITOR_AUTOFIX=true."
+    }
+  },
+
+  "safe_fix_allowlist": {
+    "fix:meta": {
+      "paths": ["src/app/**/page.tsx", "src/app/**/layout.tsx"],
+      "diff_filter": {
+        "$comment": "Permissive: file scope is the primary gate. Adversarial verify catches anything outside the metadata surface. Tighten with AST if regressions appear.",
+        "added_or_changed_lines_must_match": "^[+-].*"
+      }
+    },
+    "fix:alt": {
+      "paths": ["content/blog/**", "src/components/sections/**"],
+      "diff_filter": {
+        "$comment": "Strict: only alt= attribute literal changes. Anything else is rejected.",
+        "added_lines_must_match": "^\\+.*\\salt=",
+        "removed_lines_must_match": "^-.*\\salt=",
+        "ignore_pattern": "^[+-]\\s*$"
+      }
+    }
+  },
+
+  "explicitly_excluded_paths": [
+    "src/lib/constants.ts",
+    "src/lib/config.ts",
+    "config/site.config.json",
+    "config/business.config.json",
+    "config/integrations.config.json"
+  ],
+
+  "diff_size_caps": {
+    "max_lines_changed": 200,
+    "max_files_changed": 10
+  },
+
+  "max_new_issues_per_run": 5,
+  "$max_new_issues_comment": "Per-run cap on issue creation. Prevents flood on first runs / large regressions. Detector still emits all findings (visible in run logs); only the first N create issues. Bump after soak.",
+
+
+  "cooldown_days_after_close": 7,
+
+  "canary": {
+    "$comment": "Synthetic finding that the SEO detector must always emit. If absent on any run, the workflow fails loudly and Slack-alerts. Catches silent API contract drift.",
+    "signature": "canary:robots-txt-directive-present",
+    "check": {
+      "kind": "fetch_and_assert",
+      "url": "https://webuyanyvegashouse.com/robots.txt",
+      "must_contain": "User-agent:"
+    },
+    "expected_message": "Synthetic canary: robots.txt fetched and contains a User-agent directive. If you see this in an issue, the canary should have been suppressed — investigate detect.ts."
+  },
+
+  "detection_thresholds": {
+    "$comment": "Conservative day-one defaults. Tune after week 1 review.",
+    "seo": {
+      "meta_length": {
+        "$comment": "Page-fetch detection of malformed title/description tags. Single-run + 7d cooldown handles flap; no consecutive-runs requirement at v1.",
+        "title_min": 30,
+        "title_max": 60,
+        "description_min": 100,
+        "description_max": 170,
+        "sitemap_url": "https://webuyanyvegashouse.com/sitemap.xml",
+        "max_concurrent_fetches": 5,
+        "fetch_timeout_ms": 10000
+      },
+      "ranking_drop": {
+        "min_position_drop": 5,
+        "min_consecutive_days": 2,
+        "only_for_keywords_previously_ranked_top_n": 20
+      },
+      "indexation_loss": {
+        "min_days_missing_from_gsc": 7
+      },
+      "schema_validation_failure": {
+        "min_consecutive_runs_failing": 2
+      }
+    },
+    "site_health": {
+      "form_error_rate_spike": {
+        "multiplier_over_7d_baseline": 2.0,
+        "min_absolute_events_24h": 5
+      },
+      "js_exception_spike": {
+        "multiplier_over_7d_baseline": 2.0,
+        "min_absolute_events_24h": 10
+      }
+    }
+  },
+
+  "prompt_versions": {
+    "$comment": "Bumped manually when a prompt is materially changed. Logged in every issue body for audit.",
+    "detect-site-health": "v1",
+    "detect-seo": "v1",
+    "fix": "v1",
+    "verify": "v1"
+  }
+}

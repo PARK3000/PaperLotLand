@@ -1,0 +1,99 @@
+{
+  "$schema": "./schemas/onboarding.schema.json",
+  "_comment": "Track your project setup progress",
+
+  "steps": [
+    {
+      "id": "mcp-servers",
+      "title": "Configure MCP Servers",
+      "description": "Set up FireCrawl and DataForSEO MCP servers for scraping and SEO analysis",
+      "completed": false,
+      "required": true,
+      "commands": [
+        "claude mcp add firecrawl -e FIRECRAWL_API_KEY=$FIRECRAWL_API_KEY -- npx -y firecrawl-mcp",
+        "claude mcp add dataforseo -e DATAFORSEO_LOGIN=$DATAFORSEO_LOGIN -e DATAFORSEO_PASSWORD=$DATAFORSEO_PASSWORD -- npx -y dataforseo-mcp-server"
+      ]
+    },
+    {
+      "id": "env-setup",
+      "title": "Environment Variables",
+      "description": "Copy .env.example to .env.local and fill in your API keys",
+      "completed": false,
+      "required": true
+    },
+    {
+      "id": "scrape-target",
+      "title": "Scrape Target Website",
+      "description": "Run /scrape-site to extract content from the target website",
+      "completed": false,
+      "required": true,
+      "command": "/scrape-site https://example.com"
+    },
+    {
+      "id": "extract-design",
+      "title": "Extract Design System",
+      "description": "Run /extract-design to capture colors, fonts, and styling",
+      "completed": false,
+      "required": true,
+      "command": "/extract-design https://example.com"
+    },
+    {
+      "id": "seo-analysis",
+      "title": "SEO Analysis",
+      "description": "Run /analyze-seo to research keywords and competitors",
+      "completed": false,
+      "required": true,
+      "command": "/analyze-seo example.com"
+    },
+    {
+      "id": "keyword-plan",
+      "title": "Keyword Strategy",
+      "description": "Run /generate-keyword-plan to create your SEO strategy",
+      "completed": false,
+      "required": true,
+      "command": "/generate-keyword-plan"
+    },
+    {
+      "id": "config-site",
+      "title": "Configure Site Settings",
+      "description": "Update config/site.config.json with your branding",
+      "completed": false,
+      "required": true
+    },
+    {
+      "id": "config-business",
+      "title": "Configure Business Info",
+      "description": "Update config/business.config.json with your contact details",
+      "completed": false,
+      "required": true
+    },
+    {
+      "id": "build-pages",
+      "title": "Build Pages",
+      "description": "Use /build-page to generate each page from scraped content",
+      "completed": false,
+      "required": true
+    },
+    {
+      "id": "integrations",
+      "title": "Set Up Integrations",
+      "description": "Configure analytics, forms, and other integrations",
+      "completed": false,
+      "required": false
+    },
+    {
+      "id": "deploy",
+      "title": "Deploy to Vercel",
+      "description": "Deploy your site using the Vercel CLI or dashboard",
+      "completed": false,
+      "required": true,
+      "command": "vercel"
+    }
+  ],
+
+  "metadata": {
+    "projectStarted": "2026-01-21",
+    "targetUrl": "https://webuyanyvegashouse.com/",
+    "targetDomain": "webuyanyvegashouse.com"
+  }
+}

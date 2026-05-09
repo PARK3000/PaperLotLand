@@ -1,0 +1,41 @@
+# PaperLotLand — Las Vegas Off-Market Land Network
+
+PaperLotLand is the private land developer and broker network for the Las Vegas Valley.
+We specialize in off-market land deals across Clark County — including Las Vegas, Henderson, North Las Vegas, Boulder City, and unincorporated Clark County.
+
+## What We Do
+
+- Source off-market land parcels before they hit MLS or public listing
+- Connect land sellers with qualified developers, investors, and brokers
+- Provide GIS and zoning research resources for Clark County jurisdictions
+- Operate a private network of buyers and sellers who move land in Southern Nevada
+
+## Contact
+
+- Phone: (702) 465-6111
+- Email: parker@paperlotland.com
+- Address: 9159 W Flamingo Rd #110, Las Vegas, NV 89147
+- Website: https://paperlotland.com
+
+## Key Pages
+
+- /available-lots/ — Current off-market inventory (private to network members)
+- /closed-sales/ — Past closed land transactions with GIS data
+- /off-market-deals/ — Join the off-market network
+- /resources/ — GIS portals and zoning codes for all Clark County jurisdictions
+- /resources/clark-county/ — Clark County GISMO, zoning, and development codes
+- /resources/henderson/ — Henderson GIS and zoning resources
+- /resources/north-las-vegas/ — North Las Vegas zoning resources
+- /resources/boulder-city/ — Boulder City development codes
+- /resources/las-vegas/ — City of Las Vegas zoning resources
+- /blog/ — Land development insights, zoning guides, and market analysis
+- /contact/ — Contact PaperLotLand
+
+## Service Area
+
+Clark County, Nevada — including the Las Vegas Strip corridor, Enterprise, Spring Valley, Henderson, North Las Vegas, Boulder City, and surrounding unincorporated areas.
+
+## GIS Resources
+
+Clark County GISMO: https://gis.clark.nv.gov/openweb/
+Henderson GIS: https://www.hendersonlive.com/GIS

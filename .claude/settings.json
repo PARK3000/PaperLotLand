@@ -1,0 +1,32 @@
+{
+  "project": {
+    "name": "We Buy Any Vegas House",
+    "description": "SEO optimized real estate marketing website for We Buy Any Vegas House"
+  },
+  "permissions": {
+    "allow": [
+      "Read",
+      "Write",
+      "Edit",
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(node:*)",
+      "Bash(git:*)",
+      "Bash(mkdir:*)",
+      "Bash(ls:*)",
+      "Bash(curl:*)",
+      "WebFetch",
+      "WebSearch"
+    ]
+  },
+  "mcpServers": {
+    "firecrawl": {
+      "description": "Web scraping and crawling",
+      "required": true
+    },
+    "dataforseo": {
+      "description": "SEO and keyword research",
+      "required": true
+    }
+  }
+}

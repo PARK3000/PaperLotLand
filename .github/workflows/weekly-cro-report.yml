@@ -1,0 +1,72 @@
+name: Weekly CRO/SEO Report
+
+on:
+  schedule:
+    # Every Monday at 8:00am PST (15:00 UTC)
+    - cron: '0 15 * * 1'
+  workflow_dispatch:
+    inputs:
+      send_email:
+        description: 'Send email report'
+        required: false
+        default: 'true'
+        type: boolean
+      week:
+        description: 'Week label override (e.g. 2026-W10)'
+        required: false
+        default: ''
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run weekly report
+        env:
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          NEXT_PUBLIC_POSTHOG_HOST: ${{ secrets.NEXT_PUBLIC_POSTHOG_HOST }}
+          POSTHOG_PERSONAL_API_KEY: ${{ secrets.POSTHOG_PERSONAL_API_KEY }}
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+          ACTIVECAMPAIGN_API_URL: ${{ secrets.ACTIVECAMPAIGN_API_URL }}
+          ACTIVECAMPAIGN_API_KEY: ${{ secrets.ACTIVECAMPAIGN_API_KEY }}
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          NOTIFICATION_EMAIL: ${{ secrets.NOTIFICATION_EMAIL }}
+          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://webuyanyvegashouse.com' }}
+        run: |
+          ARGS=""
+          if [ "${{ github.event.inputs.send_email }}" = "true" ] || [ "${{ github.event_name }}" = "schedule" ]; then
+            ARGS="$ARGS --send-email"
+          fi
+          if [ -n "${{ github.event.inputs.week }}" ]; then
+            ARGS="$ARGS --week=${{ github.event.inputs.week }}"
+          fi
+          # shellcheck disable=SC2086 # ARGS is a flag list; intentional word-splitting
+          node scripts/weekly-report.js $ARGS
+
+      - name: Commit report to repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports/
+          if git diff --staged --quiet; then
+            echo "No report changes to commit"
+          else
+            git commit -m "chore: weekly CRO report $(date +%Y-W%V)"
+            git push
+          fi

@@ -1,0 +1,10 @@
+# Target modern browsers — removes unnecessary ES5 transpilation (~40 KiB savings per Lighthouse)
+# Excludes IE11, Opera Mini, and browsers that don't support ES modules (< 0.5% global usage)
+> 0.5%
+last 2 Chrome versions
+last 2 Firefox versions
+last 2 Edge versions
+last 2 Safari versions
+Firefox ESR
+not dead
+supports es6-module

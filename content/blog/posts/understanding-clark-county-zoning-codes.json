@@ -1,0 +1,40 @@
+{
+  "slug": "understanding-clark-county-zoning-codes",
+  "title": "Understanding Clark County Zoning Codes: A Developer's Guide",
+  "excerpt": "A practical guide to navigating Clark County's zoning code — from zoning districts and permitted uses to setbacks, FAR, and height limits for land development in the Las Vegas Valley.",
+  "category": "Zoning Resources",
+  "author": "Casey Ryan",
+  "publishedAt": "2026-04-15",
+  "updatedAt": "2026-04-15",
+  "readTime": "8 min read",
+  "featured": true,
+  "image": "/images/blog/clark-county-zoning.jpg",
+  "imageAlt": "Clark County zoning map showing residential and commercial districts",
+  "seo": {
+    "title": "Clark County Zoning Codes Explained | PaperLotLand",
+    "description": "Learn how Clark County zoning codes work — districts, permitted uses, setbacks, FAR, and height limits. A practical guide for land developers and investors in the Las Vegas Valley.",
+    "keywords": ["clark county zoning", "las vegas zoning codes", "land development zoning", "clark county gismo", "nevada land development"]
+  },
+  "keyTakeaways": [
+    "Clark County's zoning code covers unincorporated areas including the Las Vegas Strip corridor, Enterprise, and Spring Valley.",
+    "The most important zoning categories for developers: R-1 (single-family), R-2 (multifamily), C-1/C-2 (commercial), and M-D/M-1 (industrial).",
+    "Use the Clark County GISMO portal to look up current zoning by parcel before making any acquisition decisions.",
+    "Setbacks, FAR, and height limits vary by zone and can significantly affect what you can build.",
+    "Variance and conditional use permit processes exist for non-conforming projects — budget 3–6 months for approval."
+  ],
+  "content": "<h2>Why Zoning Matters Before You Buy</h2><p>In the Las Vegas Valley, a parcel's zoning designation determines everything — what you can build, how tall, how close to the property line, and how dense. Getting zoning wrong at acquisition is one of the most common and costly mistakes land investors make.</p><p>Clark County is distinct from the incorporated cities (Las Vegas, Henderson, North Las Vegas) and has its own comprehensive zoning ordinance (Title 30 of the Clark County Code). If the parcel you're looking at is in unincorporated Clark County, it's governed by Title 30 — not by city ordinances.</p><h2>Clark County Zoning Districts: The Basics</h2><p>Clark County's residential zones run from R-E (Rural Estates — large minimum lot sizes, agricultural uses allowed) through R-4 (high-density multifamily). The commercial zones (C-1 through C-2) cover retail, office, and general commercial uses. M-D and M-1 cover manufacturing and industrial uses.</p><p>For most developers, the zones you'll encounter most:</p><ul><li><strong>R-1</strong>: Single-family residential. Minimum lot size typically 6,500 sq ft.</li><li><strong>R-2</strong>: Multifamily residential. Allows duplexes through apartment complexes depending on subzone.</li><li><strong>C-1</strong>: Neighborhood commercial. Retail, restaurants, offices — no heavy commercial.</li><li><strong>C-2</strong>: General commercial. Broader commercial uses, auto-related, some light industrial.</li><li><strong>M-D</strong>: Design manufacturing. Flex industrial, light manufacturing, warehouse.</li><li><strong>M-1</strong>: Light industrial. Warehousing, distribution, manufacturing.</li></ul><h2>How to Look Up Zoning for Any Parcel</h2><p>The fastest way to check current zoning for any parcel in unincorporated Clark County is the <a href='https://gis.clark.nv.gov/openweb/' target='_blank' rel='noopener noreferrer'>Clark County GISMO portal</a>. You can search by APN (Assessor's Parcel Number), street address, or owner name.</p><p>Once you've located the parcel, look at the zoning layer in the GIS viewer. Cross-reference the zoning code with Title 30 to get specific development standards: setbacks, maximum height, FAR (floor-area ratio), lot coverage, and parking requirements.</p><h2>Setbacks, FAR, and Height Limits</h2><p>Setbacks define the minimum distance from a structure to property lines. Front setbacks in R-1 zones are typically 20 feet; side yard setbacks are 5 feet per story. In commercial zones, setbacks depend on adjacent uses and road classification.</p><p>FAR (floor-area ratio) caps total built square footage relative to lot size. A 1.0 FAR on a 10,000 sq ft lot = maximum 10,000 sq ft of building. Higher-density zones like R-4 can have FAR up to 2.0 or more.</p><p>Height limits in residential zones are typically 35 feet (two stories). Commercial zones vary widely — C-2 can allow 45 feet or more depending on location and proximity to residential uses.</p><h2>Conditional Use Permits and Variances</h2><p>If your development plan doesn't fit the base zone by right, you have two paths: a conditional use permit (CUP) for uses that are permitted with conditions, or a variance for deviations from development standards.</p><p>Both processes require neighborhood notification, a public hearing before the County's Board of Adjustment or Planning Commission, and a written finding. Budget 3–6 months and $5,000–$20,000+ in fees and consultant costs for either process.</p><h2>Due Diligence Checklist</h2><p>Before acquiring any parcel in Clark County:</p><ol><li>Verify current zoning via GISMO.</li><li>Read the Title 30 development standards for that zone.</li><li>Check for any overlay districts (flood, scenic corridor, airport approach).</li><li>Confirm utilities are available (water, sewer, power) — many outlying parcels are on well/septic.</li><li>Check the Clark County Flood Control District maps for FEMA flood zone designation.</li></ol>",
+  "faqs": [
+    {
+      "question": "Where do I find Clark County's zoning code online?",
+      "answer": "The Clark County zoning code (Title 30) is available at https://www.clarkcountynv.gov/government/departments/comprehensive_planning/zoning_administration. The GISMO GIS portal at https://gis.clark.nv.gov/openweb/ shows current zoning layers for any parcel."
+    },
+    {
+      "question": "What's the difference between Clark County zoning and City of Las Vegas zoning?",
+      "answer": "Clark County governs unincorporated areas — the Las Vegas Strip, Enterprise, Spring Valley, Whitney, and surrounding areas outside city limits. The City of Las Vegas, Henderson, and North Las Vegas have their own zoning codes and are separate jurisdictions."
+    },
+    {
+      "question": "How long does a zoning variance take in Clark County?",
+      "answer": "Typically 3–6 months from application to decision, assuming a complete application package. More complex projects involving environmental review can take longer."
+    }
+  ]
+}

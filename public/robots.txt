@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Block admin panel
+Disallow: /admin/
+Disallow: /api/
+
+# Block no-index pages
+Disallow: /thank-you/
+
+Sitemap: https://paperlotland.com/sitemap.xml

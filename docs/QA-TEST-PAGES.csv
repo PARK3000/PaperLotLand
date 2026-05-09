@@ -1,0 +1,75 @@
+Page Name,Route,Category,Has Form,Has Schema,Priority
+Homepage,/,Core,Yes,Yes,P0
+How It Works,/how-it-works/,Core,Yes,Yes,P0
+Get Your Cash Today,/get-your-cash-today/,Form,Yes,No,P0
+Contact Us,/contact-us/,Form,Yes,Yes,P0
+Booking,/booking/,Form,Yes,No,P0
+Sell My House Fast,/sell-my-house-fast/,Core,No,Yes,P0
+Selling My House in Las Vegas for Cash,/selling-my-house-in-las-vegas-for-cash/,Core,Yes,Yes,P0
+Happy Sellers (Reviews),/happy-sellers/,Core,No,Yes,P0
+Frequently Asked Questions,/frequently-asked-questions/,Core,No,Yes,P0
+Team,/team/,Core,No,Yes,P0
+Vs Realtor,/vs-realtor/,Core,No,Yes,P0
+Locations Hub,/locations/,Core,No,No,P0
+Realtors,/realtors/,Core,No,No,P0
+Selling a Home (Blog Listing),/selling-a-home/,Blog Category,No,No,P1
+Selling a Home - Page 2,/selling-a-home/page/2/,Blog Category,No,No,P2
+Sell Your House (Blog Listing),/sell-your-house/,Blog Category,No,No,P1
+Sell My House Fast (Blog Listing),/sell-my-house-fast/,Blog Category,No,Yes,P1
+Buying a Home (Blog Listing),/buying-a-home/,Blog Category,No,No,P1
+Blog Listing,/blog/,Blog Category,No,No,P1
+Blog - Page 2,/blog/page/2/,Blog Category,No,No,P2
+LP: We Buy Any Vegas House,/lp/we-buy-any-vegas-house/,Landing Page,Yes,No,P1
+LP: Sell My House Fast,/lp/sell-my-house-fast/,Landing Page,Yes,No,P1
+LP: Sell My House Fast for Cash,/lp/sell-my-house-fast-for-cash/,Landing Page,Yes,No,P1
+LP: Sell My House As Is,/lp/sell-my-house-as-is/,Landing Page,Yes,No,P1
+LP: Fast House Sale,/lp/fast-house-sale/,Landing Page,Yes,No,P1
+LP: Companies That Buy Houses for Cash,/lp/companies-that-buy-houses-for-cash/,Landing Page,Yes,No,P1
+LP: Sell My House for Cash Vegas,/lp/sell-my-house-for-cash-vegas/,Landing Page,Yes,No,P1
+LP: Vegas Home Buyer,/lp/vegas-home-buyer/,Landing Page,Yes,No,P1
+LP: We Buy Houses Vegas,/lp/we-buy-houses-vegas/,Landing Page,Yes,No,P1
+LP: Email,/lp/email/,Landing Page,Yes,No,P1
+Henderson,/henderson/,Location,Yes,Yes,P1
+We Buy Houses Summerlin,/we-buy-houses-summerlin/,Location,Yes,Yes,P1
+We Buy Houses Boulder City,/we-buy-houses-boulder-city/,Location,Yes,Yes,P1
+We Buy Houses Enterprise,/we-buy-houses-enterprise/,Location,Yes,Yes,P1
+We Buy Houses Pahrump,/we-buy-houses-pahrump/,Location,Yes,Yes,P1
+We Buy Houses Paradise,/we-buy-houses-paradise/,Location,Yes,Yes,P1
+Sell My House Fast Green Valley NV,/sell-my-house-fast-green-valley-nv/,Location,Yes,Yes,P1
+Code Violations,/code-violations/,Situation,Yes,Yes,P1
+Facing Bankruptcy,/facing-bankruptcy/,Situation,Yes,Yes,P1
+Family Matters,/family-matters/,Situation,Yes,Yes,P1
+Fire Damaged Home,/fire-damaged-home/,Situation,Yes,Yes,P1
+Going Through a Divorce,/going-through-a-divorce/,Situation,Yes,Yes,P1
+House Full of Trash,/house-full-of-trash/,Situation,Yes,Yes,P1
+House That Needs Repairs,/house-that-needs-repairs/,Situation,Yes,Yes,P1
+How to Avoid Foreclosure Las Vegas,/how-to-avoid-foreclosure-las-vegas/,Situation,Yes,Yes,P1
+Late on Mortgage Payments,/late-on-mortgage-payments/,Situation,Yes,Yes,P1
+Need to Downsize,/need-to-downsize/,Situation,Yes,Yes,P1
+Need to Sell an Inherited House,/need-to-sell-an-inherited-house/,Situation,Yes,Yes,P1
+Relocating,/relocating/,Situation,Yes,Yes,P1
+Stop a Foreclosure,/stop-a-foreclosure/,Situation,Yes,Yes,P1
+Case Study: Fast As-Is Cash Sale Saves Landlords,/case-study-fast-as-is-cash-sale-saves-landlords-thousands-and-eliminates-stress/,Case Study,No,Yes,P2
+Case Study: From Foreclosure Notice to Cash in 14 Days,/case-study-from-foreclosure-notice-to-cash-in-hand-in-14-days/,Case Study,No,Yes,P2
+Case Study: From Squatters to Sold,/case-study-from-squatters-to-sold-how-we-helped-a-vegas-family-sell-grandmas-home-fast/,Case Study,No,Yes,P2
+Case Study: Navigating a Difficult Inheritance,/case-study-helping-navigate-a-difficult-inheritance-in-las-vegas/,Case Study,No,Yes,P2
+Case Study: Family Escaped Stress Sold Fast,/case-study-how-one-las-vegas-family-escaped-stress-sold-their-home-fast-without-repairs-or-drama/,Case Study,No,Yes,P2
+Case Study: Complex Rental Property Sale in 14 Days,/case-study-how-we-buy-any-vegas-house-solved-a-complex-rental-property-sale-in-just-14-days/,Case Study,No,Yes,P2
+Case Study: Divorce and Financial Hardship,/case-study-how-we-helped-a-las-vegas-homeowner-overcome-divorce-and-financial-hardship/,Case Study,No,Yes,P2
+Case Study: Selling a Hoarder House in Henderson,/case-study-selling-a-hoarder-house-in-henderson/,Case Study,No,Yes,P2
+Case Study: Selling from Colorado No Repairs,/case-study-selling-a-las-vegas-home-from-colorado-no-repairs-needed/,Case Study,No,Yes,P2
+Case Study: Selling from 900 Miles Away,/case-study-selling-from-900-miles-away-how-mark-sold-his-inherited-vegas-home-in-11-days/,Case Study,No,Yes,P2
+Blog: Quick Sale Advantage - Cash Buyers Handle Liens,/selling-a-home/the-quick-sale-advantage-how-cash-buyers-handle-liens-on-las-vegas-homes/,Blog,No,Yes,P2
+Blog: HOA Liens and Beyond,/selling-a-home/hoa-liens-and-beyond-understanding-and-resolving-other-property-debts-in-las-vegas/,Blog,No,Yes,P2
+Blog: Guide to Selling with Unpaid Taxes,/selling-a-home/navigating-the-sale-your-guide-to-selling-a-las-vegas-home-with-unpaid-taxes-or-liens/,Blog,No,Yes,P2
+Blog: Selling Your North Las Vegas Home,/sell-your-house/selling-your-north-las-vegas-home/,Blog,No,Yes,P2
+Blog: Can I Sell with a Mortgage for Cash,/sell-your-house/can-i-sell-my-clark-county-house-for-cash-if-i-have-a-mortgage/,Blog,No,Yes,P2
+Blog: Top 5 Benefits of Selling Inherited House,/sell-your-house/the-top-5-benefits-of-selling-an-inherited-house-for-cash/,Blog,No,Yes,P2
+Blog: Stopping Foreclosure from Unpaid Taxes,/sell-my-house-fast/stopping-the-clock-preventing-foreclosure-from-unpaid-las-vegas-property-taxes/,Blog,No,Yes,P2
+Blog: 2026 North Las Vegas Real Estate Forecast,/buying-a-home/2026-north-las-vegas-real-estate-forecast-rates-inventory-and-what-it-means-for-you/,Blog,No,Yes,P2
+Blog: Why North Las Vegas is the Hotspot of 2026,/buying-a-home/why-north-las-vegas-is-the-real-estate-hotspot-of-2026/,Blog,No,Yes,P2
+Blog: 3 Strategies for Selling Fast,/selling-a-home/3-strategies-for-selling-your-house-fast-in-las-vegas/,Blog,No,Yes,P2
+Blog: Avoid Being Ripped Off by We Buy Houses Scams,/selling-a-home/avoid-being-ripped-off-by-we-buy-houses-scams-in-vegas/,Blog,No,Yes,P2
+Careers,/careers/,Utility,No,No,P2
+Privacy Policy,/privacy-policy/,Utility,No,No,P2
+Thank You,/thank-you/,Utility,No,No,P2

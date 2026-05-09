@@ -1,0 +1,40 @@
+{
+  "$schema": "./schemas/integrations.schema.json",
+
+  "analytics": {
+    "googleTagManager": {
+      "enabled": false,
+      "containerId": ""
+    },
+    "vercel": {
+      "enabled": true
+    }
+  },
+
+  "forms": {
+    "provider": "internal",
+    "webhookEnabled": true,
+    "emailNotifications": true
+  },
+
+  "chat": {
+    "enabled": false,
+    "provider": ""
+  },
+
+  "email": {
+    "provider": "resend",
+    "fromName": "PaperLotLand",
+    "fromEmail": "noreply@paperlotland.com"
+  },
+
+  "crm": {
+    "enabled": false,
+    "provider": ""
+  },
+
+  "maps": {
+    "provider": "google",
+    "showOnContact": true
+  }
+}

@@ -1,0 +1,99 @@
+name: Agents — Detect
+
+# Daily detection pass. Runs site-health and SEO detectors in a matrix,
+# files structured GitHub Issues for findings, and runs an auto-close pass
+# against previously-open agent issues.
+#
+# Plan: docs/plans/2026-04-28-feat-closed-loop-agentic-monitoring-plan.md
+# Runbook: docs/agents/README.md
+
+on:
+  schedule:
+    # Daily at 9:00am PST (17:00 UTC) — after weekly-cro-report Mondays
+    - cron: '0 17 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Run a single mode (default: all)'
+        required: false
+        default: 'all'
+        type: choice
+        options: [all, seo, site-health, auto-close]
+
+concurrency:
+  group: agents-detect-${{ github.event.inputs.mode || 'all' }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  detect:
+    if: ${{ github.event.inputs.mode != 'auto-close' }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        mode: [seo, site-health]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Skip if mode filter excludes this matrix entry
+        if: ${{ github.event.inputs.mode != '' && github.event.inputs.mode != 'all' && github.event.inputs.mode != matrix.mode }}
+        run: |
+          echo "Skipping ${{ matrix.mode }} (input mode = ${{ github.event.inputs.mode }})"
+          exit 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: Run detector (${{ matrix.mode }})
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AHREFS_API_TOKEN: ${{ secrets.AHREFS_API_TOKEN }}
+          GOOGLE_SERVICE_ACCOUNT_B64: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_B64 }}
+          POSTHOG_PERSONAL_API_KEY: ${{ secrets.POSTHOG_PERSONAL_API_KEY }}
+          NEXT_PUBLIC_POSTHOG_HOST: ${{ secrets.NEXT_PUBLIC_POSTHOG_HOST }}
+          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://webuyanyvegashouse.com' }}
+        run: npx tsx scripts/agents/detect.ts --mode=${{ matrix.mode }}
+
+      - name: Notify Slack on canary failure
+        if: ${{ failure() && env.SLACK_AGENT_WEBHOOK_URL != '' }}
+        env:
+          SLACK_AGENT_WEBHOOK_URL: ${{ secrets.SLACK_AGENT_WEBHOOK_URL }}
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+            --data "$(cat <<EOF
+          {"text": ":rotating_light: Agentic detection failed (mode: ${{ matrix.mode }}). Canary or pipeline broken — do not trust today's findings. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"}
+          EOF
+          )" \
+            "$SLACK_AGENT_WEBHOOK_URL"
+
+  auto-close:
+    runs-on: ubuntu-latest
+    needs: detect
+    if: ${{ always() && (github.event.inputs.mode == '' || github.event.inputs.mode == 'all' || github.event.inputs.mode == 'auto-close') }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: Auto-close recovered issues
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://webuyanyvegashouse.com' }}
+        run: npx tsx scripts/agents/detect.ts --mode=auto-close

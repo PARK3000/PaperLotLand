@@ -1,0 +1,290 @@
+{
+  "domain": "webuyanyvegashouse.com",
+  "dataSource": "DataForSEO API",
+  "lastUpdated": "2026-01-21",
+  "primary": [
+    {
+      "keyword": "we buy any vegas house",
+      "volume": 720,
+      "difficulty": 11,
+      "cpc": 53.16,
+      "currentPosition": 1,
+      "targetPage": "/",
+      "priority": 1,
+      "status": "maintain"
+    },
+    {
+      "keyword": "we buy houses for cash las vegas",
+      "volume": 720,
+      "difficulty": 14,
+      "cpc": 80.91,
+      "currentPosition": 2,
+      "targetPage": "/",
+      "priority": 1,
+      "status": "maintain"
+    },
+    {
+      "keyword": "we buy houses las vegas",
+      "volume": 720,
+      "difficulty": 4,
+      "cpc": 80.91,
+      "currentPosition": 3,
+      "targetPage": "/",
+      "priority": 1,
+      "status": "push-to-1"
+    },
+    {
+      "keyword": "cash home buyers las vegas",
+      "volume": 170,
+      "difficulty": 11,
+      "cpc": 123.86,
+      "currentPosition": 10,
+      "targetPage": "/",
+      "priority": 1,
+      "status": "push-to-5"
+    }
+  ],
+  "criticalGap": [
+    {
+      "keyword": "sell my house fast las vegas",
+      "volume": 880,
+      "difficulty": 13,
+      "cpc": 27.54,
+      "currentPosition": 37,
+      "targetPage": "/sell-my-house-fast-las-vegas/",
+      "priority": 0,
+      "status": "CRITICAL - create dedicated landing page",
+      "competitors": {
+        "homelight.com": 2,
+        "homevestors.com": 3,
+        "webuyhouses.com": 4,
+        "opendoor.com": 5
+      }
+    }
+  ],
+  "quickWins": [
+    {
+      "keyword": "fast vegas home buyers",
+      "volume": 390,
+      "difficulty": 0,
+      "cpc": 0,
+      "currentPosition": 37,
+      "targetPage": "/",
+      "priority": 1,
+      "status": "zero-difficulty-easy-win",
+      "action": "Add to page titles and meta descriptions"
+    },
+    {
+      "keyword": "we buy ugly houses reviews",
+      "volume": 880,
+      "difficulty": 2,
+      "cpc": 76.85,
+      "currentPosition": null,
+      "targetPage": "/best-cash-home-buyers-las-vegas/",
+      "priority": 1,
+      "status": "create-comparison-content"
+    },
+    {
+      "keyword": "we buy ugly houses",
+      "volume": 5400,
+      "difficulty": 13,
+      "cpc": 127.34,
+      "currentPosition": null,
+      "targetPage": "/we-buy-any-condition-houses/",
+      "priority": 2,
+      "status": "create-distressed-property-page"
+    }
+  ],
+  "secondary": [
+    {
+      "keyword": "sell my house fast vegas",
+      "volume": 110,
+      "difficulty": 17,
+      "cpc": 118.36,
+      "currentPosition": 5,
+      "targetPage": "/sell-my-house-fast-las-vegas/",
+      "priority": 2
+    },
+    {
+      "keyword": "sell my house fast in las vegas",
+      "volume": 110,
+      "difficulty": 10,
+      "cpc": 118.36,
+      "currentPosition": 14,
+      "targetPage": "/sell-my-house-fast-las-vegas/",
+      "priority": 2
+    },
+    {
+      "keyword": "las vegas cash home buyers",
+      "volume": 170,
+      "difficulty": 7,
+      "cpc": 123.86,
+      "currentPosition": 10,
+      "targetPage": "/",
+      "priority": 2
+    },
+    {
+      "keyword": "sell my house las vegas",
+      "volume": 170,
+      "difficulty": 18,
+      "cpc": 31.93,
+      "currentPosition": 16,
+      "targetPage": "/",
+      "priority": 2
+    },
+    {
+      "keyword": "sell my las vegas house",
+      "volume": 170,
+      "difficulty": 22,
+      "cpc": 31.93,
+      "currentPosition": 15,
+      "targetPage": "/",
+      "priority": 2
+    }
+  ],
+  "local": [
+    {
+      "keyword": "we buy houses henderson nv",
+      "volume": 100,
+      "difficulty": 20,
+      "targetPage": "/locations/henderson/",
+      "city": "Henderson",
+      "priority": 1
+    },
+    {
+      "keyword": "we buy houses north las vegas",
+      "volume": 50,
+      "difficulty": 15,
+      "targetPage": "/locations/north-las-vegas/",
+      "city": "North Las Vegas",
+      "priority": 1
+    },
+    {
+      "keyword": "cash home buyers summerlin",
+      "volume": 50,
+      "difficulty": 10,
+      "targetPage": "/locations/summerlin/",
+      "city": "Summerlin",
+      "priority": 1
+    },
+    {
+      "keyword": "we buy houses spring valley",
+      "volume": 30,
+      "difficulty": 10,
+      "targetPage": "/locations/spring-valley/",
+      "city": "Spring Valley",
+      "priority": 2
+    }
+  ],
+  "situational": [
+    {
+      "keyword": "sell house divorce las vegas",
+      "volume": 100,
+      "difficulty": 32,
+      "targetPage": "/situations/divorce/",
+      "opportunityScore": 68,
+      "priority": 2
+    },
+    {
+      "keyword": "sell inherited house las vegas",
+      "volume": 100,
+      "difficulty": 35,
+      "targetPage": "/situations/inherited-property/",
+      "opportunityScore": 65,
+      "priority": 2
+    },
+    {
+      "keyword": "avoid foreclosure las vegas",
+      "volume": 100,
+      "difficulty": 40,
+      "targetPage": "/situations/foreclosure/",
+      "opportunityScore": 60,
+      "priority": 2
+    },
+    {
+      "keyword": "sell rental property las vegas",
+      "volume": 100,
+      "difficulty": 45,
+      "targetPage": "/situations/tenant-issues/",
+      "opportunityScore": 55,
+      "priority": 2
+    }
+  ],
+  "nationalBenchmarks": [
+    {
+      "keyword": "we buy houses",
+      "volume": 14800,
+      "difficulty": 56,
+      "cpc": 109.58,
+      "note": "National term - long-term target"
+    },
+    {
+      "keyword": "we buy ugly houses",
+      "volume": 5400,
+      "difficulty": 13,
+      "cpc": 127.34,
+      "note": "Low difficulty - create targeted content"
+    },
+    {
+      "keyword": "cash home buyers",
+      "volume": 6600,
+      "difficulty": 55,
+      "cpc": 197.81,
+      "note": "National term - focus on local variant"
+    },
+    {
+      "keyword": "we buy houses for cash",
+      "volume": 4400,
+      "difficulty": 58,
+      "cpc": 135.03,
+      "note": "National term - medium-term target"
+    },
+    {
+      "keyword": "cash home buyers near me",
+      "volume": 4400,
+      "difficulty": 63,
+      "cpc": 100.55,
+      "note": "Local SEO focus required"
+    }
+  ],
+  "pageTargets": {
+    "homepage": {
+      "primary": "we buy houses las vegas",
+      "secondary": ["we buy any vegas house", "we buy houses for cash las vegas", "cash home buyers las vegas", "fast vegas home buyers"],
+      "targetPosition": 1
+    },
+    "sellFastLandingPage": {
+      "primary": "sell my house fast las vegas",
+      "secondary": ["sell my house fast vegas", "sell my house fast in las vegas", "sell house fast las vegas"],
+      "currentPosition": 37,
+      "targetPosition": 5,
+      "priority": "CRITICAL"
+    },
+    "comparisonPage": {
+      "primary": "we buy ugly houses reviews",
+      "secondary": ["best cash home buyers las vegas", "cash home buyers reviews"],
+      "targetPosition": 10
+    },
+    "anyConditionPage": {
+      "primary": "we buy ugly houses las vegas",
+      "secondary": ["sell house any condition", "distressed property buyers"],
+      "targetPosition": 20
+    }
+  },
+  "competitorPositions": {
+    "sellMyHouseFastLasVegas": {
+      "homelight.com": 2,
+      "homevestors.com": 3,
+      "lasvegas.webuyhouses.com": 4,
+      "opendoor.com": 5,
+      "houzeo.com": 6,
+      "webuyanyvegashouse.com": 37
+    },
+    "weBuyHousesLasVegas": {
+      "lasvegas.webuyhouses.com": 1,
+      "homelight.com": 2,
+      "webuyanyvegashouse.com": 3,
+      "andrewthehomebuyer.com": 4
+    }
+  }
+}

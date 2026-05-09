@@ -1,0 +1,78 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build
+.next/
+out/
+build/
+dist/
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Credentials (NEVER commit these)
+config/gcs-credentials.json
+**/credentials*.json
+**/*-credentials.json
+*.pem
+*.key
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Scraped data (large files, regenerate as needed)
+scraped/
+
+# SEO research data (contains API responses)
+seo/*.json
+
+# Vercel
+.vercel
+
+# MCP tool debris (session-local, not project artifacts)
+.playwright-mcp/
+.firecrawl/
+.cursor/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Testing
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+
+# Ad-hoc screenshots / PDFs in repo root.
+# Move to docs/screenshots/ if you intentionally want to keep one.
+/*.png
+/*.jpg
+/*.jpeg
+/*.pdf
+
+# Google service account keys (never commit)
+config/gtm-service-account.json
+config/*-service-account.json
+.env*.local
+temp_auto_push.bat
+temp_interactive_push.bat
+config/admin-users.json
