@@ -29,7 +29,7 @@ const TRIGGER_CONFIG = {
 } as const
 
 /** Pages where the popup should never appear */
-const SUPPRESSED_PATHS = ['/thank-you', '/booking', '/get-your-cash-today', '/contact-us', '/careers']
+const SUPPRESSED_PATHS = ['/thank-you', '/booking', '/off-market-deals', '/contact', '/careers']
 
 /** Cookie/storage keys */
 const COOKIE_POPUP_SHOWN = 'popup_shown'

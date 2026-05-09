@@ -405,7 +405,7 @@ export default function BlogEditor({ initialData, mode }: BlogEditorProps) {
                 {
                   label: 'Write Draft',
                   action: 'generate_content',
-                  msg: `Write a comprehensive, SEO-optimized blog post for We Buy Any Vegas House about: "${draft.title || 'cash home buying in Las Vegas'}". Category: ${draft.category}. Use ## for main sections, ### for subsections. Include local Las Vegas references. Write in a helpful, trustworthy tone. Output only the blog content in markdown.`,
+                  msg: `Write a comprehensive, SEO-optimized blog post for PaperLotLand (an off-market land network in the Las Vegas Valley) about: "${draft.title || 'land investing in Las Vegas'}". Category: ${draft.category}. Use ## for main sections, ### for subsections. Include local Las Vegas Valley and Clark County references. Focus on land development, zoning, off-market deals, and investment strategy. Write in a helpful, trustworthy tone for developers, investors, and brokers. Output only the blog content in markdown.`,
                 },
                 {
                   label: 'Review',
@@ -574,7 +574,7 @@ function ContentTab({
       {/* Permalink */}
       <div className="flex items-center gap-2 text-sm text-[#646970]">
         <span>Permalink:</span>
-        <span className="text-[#a7aaad]">webuyanyvegashouse.com/blog/</span>
+        <span className="text-[#a7aaad]">paperlotland.com/blog/</span>
         <input
           value={draft.slug}
           onChange={(e) => onSlugChange(e.target.value)}
@@ -874,7 +874,7 @@ function PreviewTab({ draft }: { draft: BlogPostDraft }) {
       <div className="max-w-2xl mx-auto bg-white border border-[#c3c4c7] rounded shadow-sm p-6">
         {/* SERP snippet */}
         <div className="bg-[#f6f7f7] border border-[#c3c4c7] rounded p-3 mb-5 text-xs">
-          <p className="text-[#006621]">webuyanyvegashouse.com › blog › {draft.slug}</p>
+          <p className="text-[#006621]">paperlotland.com › blog › {draft.slug}</p>
           <p className="text-[#1a0dab] font-medium text-sm mt-0.5">{draft.seo.title || draft.title}</p>
           <p className="text-[#545454] mt-0.5">{draft.seo.description || draft.excerpt}</p>
         </div>

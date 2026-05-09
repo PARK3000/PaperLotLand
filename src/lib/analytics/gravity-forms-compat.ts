@@ -10,9 +10,9 @@
  * form element IDs, the existing triggers fire naturally.
  *
  * Mapping from WordPress Gravity Forms → Next.js forms:
- *   gform_5  → Contact page full form (/contact-us/)
- *   gform_7  → Quick lead forms on most site pages (situations, locations, case studies)
- *   gform_8  → Standard lead form on /get-your-cash-today/
+ *   gform_5  → Contact page full form (/contact/)
+ *   gform_7  → Quick lead forms on most site pages (resources, blog)
+ *   gform_8  → Standard lead form on /off-market-deals/
  *   gform_10 → Standard lead form (sample/test pages)
  *   gform_18 → Quick lead forms on homepage and landing pages
  */
@@ -26,7 +26,7 @@ const GFORM_ID_MAP: Record<string, string> = {
   'hero-lead-form': 'gform_18',
   'lp-lead-form': 'gform_18',
 
-  // Get Your Cash Today page form (gform_8 in WordPress)
+  // Off-Market Deals page form (gform_8 in WordPress)
   'lead-form-standard': 'gform_8',
 
   // Full lead forms (gform_18 for leads, gform_5 for contact)

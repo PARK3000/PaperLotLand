@@ -13,11 +13,11 @@
   },
 
   "address": {
-    "street": "9159 W Flamingo Rd",
-    "suite": "#110",
+    "street": "",
+    "suite": "",
     "city": "Las Vegas",
     "state": "NV",
-    "zip": "89147",
+    "zip": "",
     "country": "US"
   },
 

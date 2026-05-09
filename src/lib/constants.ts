@@ -286,10 +286,8 @@ export const GOOGLE_REVIEWS = {
 export const OFFICES = [
   {
     name: 'Las Vegas',
-    address: '9159 W Flamingo Rd #110',
     city: 'Las Vegas',
     state: 'NV',
-    zip: '89147',
     phone: businessConfig.contact.phone,
     phoneDisplay: businessConfig.contact.phoneDisplay,
   },

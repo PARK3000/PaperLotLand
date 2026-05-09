@@ -141,7 +141,7 @@ export async function POST(request: Request) {
       ? transcript
           .filter((m: Record<string, unknown>) => typeof m.content === 'string')
           .map((m: Record<string, unknown>) => {
-            const speaker = m.role === 'assistant' ? 'Jamie' : 'Visitor'
+            const speaker = m.role === 'assistant' ? 'Casey' : 'Visitor'
             return `${speaker}: ${String(m.content).trim()}`
           })
           .join('\n\n')
@@ -275,7 +275,7 @@ export async function POST(request: Request) {
     if (trigger === 'chat_transcript') {
       try {
         const resendKey = process.env.RESEND_API_KEY
-        const toEmail = process.env.REPORT_RECIPIENT_EMAIL || 'casey@webuyanyvegashouse.com'
+        const toEmail = process.env.REPORT_RECIPIENT_EMAIL || 'parker@paperlotland.com'
         const fromEmail = process.env.REPORT_FROM_EMAIL || 'onboarding@resend.dev'
         if (resendKey) {
           const name = fields.name || `${fields.firstName || ''} ${fields.lastName || ''}`.trim() || 'Unknown'
@@ -293,8 +293,8 @@ export async function POST(request: Request) {
             ? formattedTranscript
                 .split('\n\n')
                 .map((line: string) => {
-                  const isJamie = line.startsWith('Jamie:')
-                  return `<div style="margin-bottom:10px;padding:10px 12px;border-radius:8px;background:${isJamie ? '#f0f4ff' : '#f9fafb'};border-left:3px solid ${isJamie ? '#1e3a5f' : '#c84848'}"><span style="font-weight:600;color:${isJamie ? '#1e3a5f' : '#c84848'}">${isJamie ? 'Jamie' : 'Visitor'}</span><br><span style="color:#374151">${line.replace(/^(Jamie|Visitor): /, '').replace(/\n/g, '<br>')}</span></div>`
+                  const isCasey = line.startsWith('Casey:')
+                  return `<div style="margin-bottom:10px;padding:10px 12px;border-radius:8px;background:${isCasey ? '#f0f4ff' : '#f9fafb'};border-left:3px solid ${isCasey ? '#1e3a5f' : '#c84848'}"><span style="font-weight:600;color:${isCasey ? '#1e3a5f' : '#c84848'}">${isCasey ? 'Casey' : 'Visitor'}</span><br><span style="color:#374151">${line.replace(/^(Casey|Visitor): /, '').replace(/\n/g, '<br>')}</span></div>`
                 })
                 .join('')
             : '<p style="color:#6b7280;font-style:italic">No transcript available.</p>'
@@ -303,8 +303,8 @@ export async function POST(request: Request) {
 <!DOCTYPE html><html><body style="margin:0;padding:0;font-family:Arial,sans-serif;background:#f3f4f6">
 <div style="max-width:600px;margin:24px auto;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.1)">
   <div style="background:#1e3a5f;padding:20px 24px">
-    <h2 style="margin:0;color:#fff;font-size:18px">💬 New Chat Lead — Jamie AI Widget</h2>
-    <p style="margin:4px 0 0;color:#a8c4e0;font-size:13px">We Buy Any Vegas House</p>
+    <h2 style="margin:0;color:#fff;font-size:18px">💬 New Chat Lead — Chat Widget</h2>
+    <p style="margin:4px 0 0;color:#a8c4e0;font-size:13px">PaperLotLand</p>
   </div>
   <div style="padding:24px">
     <table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:20px">
@@ -322,7 +322,7 @@ export async function POST(request: Request) {
     ${transcriptHtml}
   </div>
   <div style="padding:12px 24px;background:#f9fafb;border-top:1px solid #e5e7eb;font-size:12px;color:#9ca3af">
-    Sent by the Jamie AI Chat Widget · We Buy Any Vegas House
+    Sent by the Chat Widget · PaperLotLand
   </div>
 </div>
 </body></html>`

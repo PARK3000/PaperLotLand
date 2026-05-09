@@ -39,7 +39,7 @@ type ExtractedFields = {
 
 const INITIAL_MESSAGE: ChatMessage = {
   role: 'assistant',
-  content: "Hi! I'm Jamie with We Buy Any Vegas House 👋\n\nAre you thinking about selling your home? I'd love to answer any questions you have!",
+  content: "Hi! I'm Casey with PaperLotLand 👋\n\nLooking to buy or sell land in the Las Vegas Valley? I can help connect you with our off-market network. What are you looking for?",
   ts: Date.now(),
 }
 
@@ -470,7 +470,7 @@ export function ChatInterface({ sessionToken, panelOpen, onSchedule, onCall }: C
       } catch {
         setMessages((prev) => [
           ...prev,
-          { role: 'assistant', content: "Hmm, I had trouble with that upload. You can also email photos to offers@webuyanyvegashouse.com!", ts: Date.now() },
+          { role: 'assistant', content: "Hmm, I had trouble with that upload. You can also email photos to info@paperlotland.com!", ts: Date.now() },
         ])
       } finally {
         setUploading(false)
@@ -600,7 +600,7 @@ export function ChatInterface({ sessionToken, panelOpen, onSchedule, onCall }: C
       {/* Quick-reply starter chips */}
       {messages.length === 1 && (
         <div className="flex flex-wrap gap-2 bg-white px-3 pb-2">
-          {["See what we'd pay", 'How does it work?', 'Schedule a call'].map((q) => (
+          {["See off-market deals", 'How does it work?', 'Schedule a call'].map((q) => (
             <button
               key={q}
               type="button"

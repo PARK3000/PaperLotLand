@@ -7,7 +7,7 @@
  * Usage:
  *   Production: Vercel cron fires automatically.
  *   Manual test: curl -H "Authorization: Bearer $CRON_SECRET" \
- *     https://webuyanyvegashouse.com/api/cron/funnel-report
+ *     https://paperlotland.com/api/cron/funnel-report
  *   Dry run (returns report without sending email):
  *     ?dry_run=1
  */

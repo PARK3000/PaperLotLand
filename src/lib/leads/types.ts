@@ -63,9 +63,9 @@ export interface LeadSubmission {
   email?: string
 
   // Property / inquiry
-  address: string // house address (WBAVH) or synthetic "Land Inquiry — …" string (PaperLotLand)
+  address: string // synthetic "Land Inquiry — …" string built from lot type + budget
 
-  // How did you hear about us (WBAVH full form only)
+  // How did you hear about us
   howDidYouHear?: string
 
   // Land-specific fields (PaperLotLand)

@@ -18,7 +18,7 @@ export default async function AdminLayout({ children }: { children: ReactNode })
         <div className="h-14 px-5 border-b border-gray-200 flex items-center shrink-0">
           <Image
             src="/images/logo/logo.svg"
-            alt="We Buy Any Vegas House"
+            alt="PaperLotLand"
             width={140}
             height={36}
             className="h-8 w-auto object-contain"
@@ -64,7 +64,7 @@ export default async function AdminLayout({ children }: { children: ReactNode })
       <div className="flex-1 flex flex-col overflow-hidden">
         {/* Top bar */}
         <header className="h-14 bg-white border-b border-gray-200 flex items-center justify-between px-6 shrink-0">
-          <span className="text-sm font-medium text-gray-700">We Buy Any Vegas House</span>
+          <span className="text-sm font-medium text-gray-700">PaperLotLand</span>
           <div className="flex items-center gap-2.5">
             <div className="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center">
               <span className="text-xs font-semibold text-blue-700">{userInitial}</span>

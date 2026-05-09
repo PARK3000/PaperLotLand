@@ -6,7 +6,7 @@
 import { google } from 'googleapis'
 import { getGoogleAuth } from './google-auth'
 
-const SITE_URL = process.env.GSC_SITE_URL || 'sc-domain:webuyanyvegashouse.com'
+const SITE_URL = process.env.GSC_SITE_URL || 'sc-domain:paperlotland.com'
 
 export interface GSCRow {
   key: string

@@ -1,38 +1,15 @@
 {
-  "siteName": "We Buy Any Vegas House",
-  "siteDescription": "We Buy Any Vegas House is a trusted cash home buyer serving Las Vegas, Henderson, and North Las Vegas. We buy homes as-is—no repairs, fees, or commissions. Get a fair, no-obligation cash offer and close in as little as 7 days.",
-  "siteUrl": "https://webuyanyvegashouse.com",
+  "siteName": "PaperLotLand",
+  "siteDescription": "PaperLotLand is the off-market land network for the Las Vegas Valley — connecting developers, brokers, and investors with land deals that never hit the public market.",
+  "siteUrl": "https://paperlotland.com",
   "business": {
-    "name": "We Buy Any Vegas House",
-    "tagline": "Vegas' Trusted Home Buyer Since 2016",
-    "phone": "(702) 213-9800",
-    "phoneSecondary": "(702) 919-5009",
-    "email": "offers@webuyanyvegashouse.com",
-    "locations": [
-      {
-        "name": "Summerlin Location",
-        "street": "9159 W Flamingo Rd #110",
-        "city": "Las Vegas",
-        "state": "NV",
-        "zip": "89147",
-        "country": "US"
-      },
-      {
-        "name": "Central Las Vegas Location",
-        "street": "7201 W Lake Mead Blvd ste 114",
-        "city": "Las Vegas",
-        "state": "NV",
-        "zip": "89128",
-        "country": "US"
-      }
-    ],
-    "address": {
-      "street": "9159 W Flamingo Rd #110",
-      "city": "Las Vegas",
-      "state": "NV",
-      "zip": "89147",
-      "country": "US"
-    },
+    "name": "PaperLotLand",
+    "tagline": "Las Vegas Valley's Off-Market Land Network",
+    "phone": "(702) 465-6111",
+    "phoneSecondary": "",
+    "email": "parker@paperlotland.com",
+    "locations": [],
+    "address": {},
     "serviceAreas": [
       "Las Vegas",
       "Henderson",
@@ -40,9 +17,8 @@
       "Summerlin",
       "Enterprise",
       "Paradise",
-      "Pahrump",
       "Boulder City",
-      "Green Valley"
+      "Clark County"
     ],
     "hours": {
       "monday": "Available",
@@ -54,25 +30,25 @@
       "sunday": "Available"
     },
     "socialLinks": {
-      "facebook": "https://www.facebook.com/WeBuyAnyVegasHouse/",
+      "facebook": "",
       "twitter": "",
-      "instagram": "https://www.instagram.com/webuyanyvegashouse/",
-      "linkedin": "https://www.linkedin.com/company/we-buy-any-vegas-house/",
-      "youtube": "https://www.youtube.com/@webuyanyvegashouse",
-      "yelp": "https://www.yelp.com/biz/we-buy-any-vegas-house-las-vegas"
+      "instagram": "",
+      "linkedin": "https://www.linkedin.com/in/the-casey-ryan/",
+      "youtube": "",
+      "yelp": ""
     },
-    "license": "S.0184768"
+    "license": ""
   },
   "seo": {
-    "defaultTitle": "We Buy Any Vegas House | Vegas' Trusted Home Buyer Since 2016",
-    "titleTemplate": "%s | We Buy Any Vegas House",
-    "defaultDescription": "Sell your Las Vegas home fast for cash. No repairs, no fees, no commissions. Get a fair, no-obligation cash offer and close in as little as 7 days.",
+    "defaultTitle": "PaperLotLand | Las Vegas Valley's Off-Market Land Network",
+    "titleTemplate": "%s | PaperLotLand",
+    "defaultDescription": "PaperLotLand connects developers, brokers, and investors with off-market land deals in the Las Vegas Valley — before they hit the public market.",
     "defaultKeywords": [
-      "sell my house fast las vegas",
-      "cash home buyers las vegas",
-      "we buy houses las vegas",
-      "sell house as-is vegas",
-      "cash offer for house las vegas"
+      "off-market land Las Vegas",
+      "land deals Las Vegas Valley",
+      "PaperLotLand",
+      "land for sale Clark County",
+      "off-market land network Nevada"
     ],
     "ogImage": "/images/og-image.jpg"
   },

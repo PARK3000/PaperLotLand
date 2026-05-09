@@ -8,13 +8,7 @@ import { BUSINESS } from '@/lib/constants'
 import type { FAQItem } from '@/lib/site-content'
 import { FAQBody } from '@/components/sections/faq-body'
 
-const defaultFAQs: FAQItem[] = [
-  {
-    question: 'How do cash home buyers work in Las Vegas?',
-    summary:
-      'We buy houses Las Vegas homeowners need to sell fast — for cash, as-is, with no repairs or fees. Get a fair cash offer in 24 hours and close in as little as 7 days.',
-  },
-]
+const defaultFAQs: FAQItem[] = []
 
 interface FAQSectionProps {
   title?: string

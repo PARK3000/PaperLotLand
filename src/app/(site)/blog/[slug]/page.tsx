@@ -204,11 +204,11 @@ export default async function BlogPostPage({ params }: PageProps) {
 
               {/* CTA Box */}
               <div className="mt-12 rounded-xl bg-[var(--color-primary)] p-8 text-center text-white">
-                <h3 className="text-2xl font-bold">Ready to Get Started?</h3>
-                <p className="mt-2 text-white/90">Contact us today to learn how we can help you.</p>
+                <h3 className="text-2xl font-bold">Ready to Access Off-Market Land Deals?</h3>
+                <p className="mt-2 text-white/90">Join our private network of developers, brokers, and investors in the Las Vegas Valley.</p>
                 <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                  <Link href="/get-your-cash-today/" className="rounded-lg bg-[var(--color-cta)] px-6 py-3 font-semibold text-white transition-colors hover:bg-[var(--color-cta-hover)]">
-                    Get Your Cash Offer
+                  <Link href="/off-market-deals/" className="rounded-lg bg-[var(--color-cta)] px-6 py-3 font-semibold text-white transition-colors hover:bg-[var(--color-cta-hover)]">
+                    Join the Network
                   </Link>
                   <a href={`tel:${BUSINESS.phone}`} className="font-semibold text-white hover:underline">
                     Or call: {BUSINESS.phoneDisplay}

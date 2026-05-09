@@ -124,7 +124,7 @@ function BookTab() {
               <div>
                 <div className="font-semibold text-sm text-[var(--color-text)]">{EVENT_LABELS[et]}</div>
                 <div className="mt-0.5 text-xs text-[var(--color-text-muted)]">
-                  {et === 'phone' ? 'A short call to discuss your property and offer.' : 'We visit the property in person at your convenience.'}
+                  {et === 'phone' ? 'A short call to discuss your land needs and network access.' : 'We meet in person to discuss your land deal at your convenience.'}
                 </div>
               </div>
               <svg className="h-4 w-4 shrink-0 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -291,7 +291,7 @@ export function ChatPanel({ open, initialTab = 'chat', onClose }: ChatPanelProps
         ].join(' ')}
         role="dialog"
         aria-modal="true"
-        aria-label="Chat with Jamie"
+        aria-label="Chat with Casey"
       >
         {/* Header */}
         <div className="flex shrink-0 items-center gap-3 rounded-t-2xl bg-[var(--color-primary)] px-4 py-3 lg:rounded-t-2xl">
@@ -303,8 +303,8 @@ export function ChatPanel({ open, initialTab = 'chat', onClose }: ChatPanelProps
             className="h-9 w-9 rounded-full object-cover ring-2 ring-white/40"
           />
           <div className="min-w-0 flex-1">
-            <p className="text-sm font-bold leading-tight text-white">Jamie Kirk</p>
-            <p className="truncate text-xs text-white/70">We Buy Any Vegas House</p>
+            <p className="text-sm font-bold leading-tight text-white">Casey Ryan</p>
+            <p className="truncate text-xs text-white/70">PaperLotLand</p>
           </div>
           <button
             type="button"

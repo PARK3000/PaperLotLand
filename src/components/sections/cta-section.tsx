@@ -14,8 +14,8 @@ interface CTASectionProps {
 }
 
 export function CTASection({
-  title = 'Ready to Sell Your House Fast?',
-  subtitle = 'Get your free, no-obligation cash offer today. We can close in as little as 7 days.',
+  title = 'Ready to Access Off-Market Land Deals?',
+  subtitle = 'Get early access to off-market land deals in the Las Vegas Valley. Join our private network of developers, brokers, and investors.',
   variant = 'primary',
   showPhone = true,
 }: CTASectionProps) {
@@ -23,8 +23,8 @@ export function CTASection({
   const handleCtaClick = () => {
     const pathname = typeof window !== 'undefined' ? window.location.pathname : ''
     trackEvent(ANALYTICS_EVENTS.CTA_CLICKED, {
-      cta_id: 'cta-section-get-offer',
-      cta_text: 'Get My Cash Offer',
+      cta_id: 'cta-section-join-network',
+      cta_text: 'Join the Network',
       page_type: getPageType(pathname),
       page_url: pathname,
     })
@@ -47,11 +47,11 @@ export function CTASection({
           {/* CTA Buttons */}
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
-              href="/get-your-cash-today/"
+              href="/off-market-deals/"
               onClick={handleCtaClick}
               className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-3 font-semibold text-[var(--color-primary)] transition-colors hover:bg-gray-100"
             >
-              Get My Cash Offer
+              Join the Network
             </Link>
             {showPhone && (
               <a
@@ -68,15 +68,15 @@ export function CTASection({
           <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
             <span className="flex items-center gap-2 text-sm text-white">
               <CheckIcon className="h-4 w-4 text-white" />
-              No Fees or Commissions
+              Off-Market Access
             </span>
             <span className="flex items-center gap-2 text-sm text-white">
               <CheckIcon className="h-4 w-4 text-white" />
-              No Obligation Offer
+              No Obligation
             </span>
             <span className="flex items-center gap-2 text-sm text-white">
               <CheckIcon className="h-4 w-4 text-white" />
-              Close in 7 Days
+              Las Vegas Valley Network
             </span>
           </div>
         </div>

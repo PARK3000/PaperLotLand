@@ -3,7 +3,7 @@ import { SITE, BUSINESS } from '@/lib/constants'
 
 export async function GET() {
   const posts = getAllPostsMeta()
-  const siteUrl = SITE.url || 'https://webuyanyvegashouse.com'
+  const siteUrl = SITE.url || 'https://paperlotland.com'
 
   const rssItems = posts.slice(0, 50).map((post) => {
     const postUrl = `${siteUrl}${getPostUrl(post)}`

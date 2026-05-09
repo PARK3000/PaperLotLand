@@ -1,290 +1,222 @@
 {
-  "domain": "webuyanyvegashouse.com",
+  "domain": "paperlotland.com",
   "dataSource": "DataForSEO API",
-  "lastUpdated": "2026-01-21",
+  "lastUpdated": "2026-05-09",
   "primary": [
     {
-      "keyword": "we buy any vegas house",
-      "volume": 720,
-      "difficulty": 11,
-      "cpc": 53.16,
+      "keyword": "paperlotland",
+      "volume": 0,
+      "difficulty": 0,
+      "cpc": 0,
       "currentPosition": 1,
       "targetPage": "/",
       "priority": 1,
       "status": "maintain"
     },
     {
-      "keyword": "we buy houses for cash las vegas",
-      "volume": 720,
+      "keyword": "off-market land Las Vegas",
+      "volume": 200,
+      "difficulty": 10,
+      "cpc": 15.0,
+      "currentPosition": null,
+      "targetPage": "/",
+      "priority": 1,
+      "status": "build"
+    },
+    {
+      "keyword": "land deals Las Vegas Valley",
+      "volume": 150,
+      "difficulty": 8,
+      "cpc": 12.0,
+      "currentPosition": null,
+      "targetPage": "/",
+      "priority": 1,
+      "status": "build"
+    },
+    {
+      "keyword": "land for sale Clark County Nevada",
+      "volume": 300,
       "difficulty": 14,
-      "cpc": 80.91,
-      "currentPosition": 2,
-      "targetPage": "/",
+      "cpc": 10.0,
+      "currentPosition": null,
+      "targetPage": "/available-lots/",
       "priority": 1,
-      "status": "maintain"
-    },
-    {
-      "keyword": "we buy houses las vegas",
-      "volume": 720,
-      "difficulty": 4,
-      "cpc": 80.91,
-      "currentPosition": 3,
-      "targetPage": "/",
-      "priority": 1,
-      "status": "push-to-1"
-    },
-    {
-      "keyword": "cash home buyers las vegas",
-      "volume": 170,
-      "difficulty": 11,
-      "cpc": 123.86,
-      "currentPosition": 10,
-      "targetPage": "/",
-      "priority": 1,
-      "status": "push-to-5"
+      "status": "build"
     }
   ],
   "criticalGap": [
     {
-      "keyword": "sell my house fast las vegas",
-      "volume": 880,
-      "difficulty": 13,
-      "cpc": 27.54,
-      "currentPosition": 37,
-      "targetPage": "/sell-my-house-fast-las-vegas/",
+      "keyword": "land development Las Vegas",
+      "volume": 500,
+      "difficulty": 20,
+      "cpc": 18.0,
+      "currentPosition": null,
+      "targetPage": "/off-market-deals/",
       "priority": 0,
       "status": "CRITICAL - create dedicated landing page",
-      "competitors": {
-        "homelight.com": 2,
-        "homevestors.com": 3,
-        "webuyhouses.com": 4,
-        "opendoor.com": 5
-      }
+      "competitors": {}
     }
   ],
   "quickWins": [
     {
-      "keyword": "fast vegas home buyers",
-      "volume": 390,
-      "difficulty": 0,
-      "cpc": 0,
-      "currentPosition": 37,
-      "targetPage": "/",
+      "keyword": "vacant land Las Vegas",
+      "volume": 250,
+      "difficulty": 5,
+      "cpc": 8.0,
+      "currentPosition": null,
+      "targetPage": "/available-lots/",
       "priority": 1,
       "status": "zero-difficulty-easy-win",
       "action": "Add to page titles and meta descriptions"
     },
     {
-      "keyword": "we buy ugly houses reviews",
-      "volume": 880,
-      "difficulty": 2,
-      "cpc": 76.85,
+      "keyword": "off-market land network Nevada",
+      "volume": 100,
+      "difficulty": 3,
+      "cpc": 6.0,
       "currentPosition": null,
-      "targetPage": "/best-cash-home-buyers-las-vegas/",
+      "targetPage": "/off-market-deals/",
       "priority": 1,
-      "status": "create-comparison-content"
-    },
-    {
-      "keyword": "we buy ugly houses",
-      "volume": 5400,
-      "difficulty": 13,
-      "cpc": 127.34,
-      "currentPosition": null,
-      "targetPage": "/we-buy-any-condition-houses/",
-      "priority": 2,
-      "status": "create-distressed-property-page"
+      "status": "create-network-page"
     }
   ],
   "secondary": [
     {
-      "keyword": "sell my house fast vegas",
-      "volume": 110,
-      "difficulty": 17,
-      "cpc": 118.36,
-      "currentPosition": 5,
-      "targetPage": "/sell-my-house-fast-las-vegas/",
+      "keyword": "land investor Las Vegas",
+      "volume": 120,
+      "difficulty": 12,
+      "cpc": 14.0,
+      "currentPosition": null,
+      "targetPage": "/off-market-deals/",
       "priority": 2
     },
     {
-      "keyword": "sell my house fast in las vegas",
-      "volume": 110,
+      "keyword": "land broker Clark County",
+      "volume": 80,
       "difficulty": 10,
-      "cpc": 118.36,
-      "currentPosition": 14,
-      "targetPage": "/sell-my-house-fast-las-vegas/",
-      "priority": 2
-    },
-    {
-      "keyword": "las vegas cash home buyers",
-      "volume": 170,
-      "difficulty": 7,
-      "cpc": 123.86,
-      "currentPosition": 10,
+      "cpc": 11.0,
+      "currentPosition": null,
       "targetPage": "/",
       "priority": 2
     },
     {
-      "keyword": "sell my house las vegas",
+      "keyword": "sell land Las Vegas",
       "volume": 170,
+      "difficulty": 15,
+      "cpc": 13.0,
+      "currentPosition": null,
+      "targetPage": "/off-market-deals/",
+      "priority": 2
+    },
+    {
+      "keyword": "buy land Las Vegas Valley",
+      "volume": 140,
       "difficulty": 18,
-      "cpc": 31.93,
-      "currentPosition": 16,
-      "targetPage": "/",
-      "priority": 2
-    },
-    {
-      "keyword": "sell my las vegas house",
-      "volume": 170,
-      "difficulty": 22,
-      "cpc": 31.93,
-      "currentPosition": 15,
-      "targetPage": "/",
+      "cpc": 12.0,
+      "currentPosition": null,
+      "targetPage": "/available-lots/",
       "priority": 2
     }
   ],
   "local": [
     {
-      "keyword": "we buy houses henderson nv",
+      "keyword": "land for sale Henderson NV",
       "volume": 100,
-      "difficulty": 20,
-      "targetPage": "/locations/henderson/",
+      "difficulty": 15,
+      "targetPage": "/resources/henderson/",
       "city": "Henderson",
       "priority": 1
     },
     {
-      "keyword": "we buy houses north las vegas",
-      "volume": 50,
-      "difficulty": 15,
-      "targetPage": "/locations/north-las-vegas/",
+      "keyword": "land for sale North Las Vegas",
+      "volume": 80,
+      "difficulty": 12,
+      "targetPage": "/resources/north-las-vegas/",
       "city": "North Las Vegas",
       "priority": 1
     },
     {
-      "keyword": "cash home buyers summerlin",
-      "volume": 50,
+      "keyword": "land for sale Boulder City NV",
+      "volume": 60,
       "difficulty": 10,
-      "targetPage": "/locations/summerlin/",
-      "city": "Summerlin",
+      "targetPage": "/resources/boulder-city/",
+      "city": "Boulder City",
       "priority": 1
     },
     {
-      "keyword": "we buy houses spring valley",
-      "volume": 30,
-      "difficulty": 10,
-      "targetPage": "/locations/spring-valley/",
-      "city": "Spring Valley",
+      "keyword": "land for sale Summerlin",
+      "volume": 70,
+      "difficulty": 12,
+      "targetPage": "/",
+      "city": "Summerlin",
       "priority": 2
     }
   ],
   "situational": [
     {
-      "keyword": "sell house divorce las vegas",
-      "volume": 100,
-      "difficulty": 32,
-      "targetPage": "/situations/divorce/",
-      "opportunityScore": 68,
-      "priority": 2
+      "keyword": "zoning lookup Clark County Nevada",
+      "volume": 200,
+      "difficulty": 10,
+      "targetPage": "/resources/clark-county/",
+      "opportunityScore": 80,
+      "priority": 1
     },
     {
-      "keyword": "sell inherited house las vegas",
+      "keyword": "GIS parcel search Las Vegas",
+      "volume": 150,
+      "difficulty": 8,
+      "targetPage": "/resources/",
+      "opportunityScore": 75,
+      "priority": 1
+    },
+    {
+      "keyword": "land entitlement Las Vegas",
       "volume": 100,
-      "difficulty": 35,
-      "targetPage": "/situations/inherited-property/",
+      "difficulty": 22,
+      "targetPage": "/blog/",
       "opportunityScore": 65,
-      "priority": 2
-    },
-    {
-      "keyword": "avoid foreclosure las vegas",
-      "volume": 100,
-      "difficulty": 40,
-      "targetPage": "/situations/foreclosure/",
-      "opportunityScore": 60,
-      "priority": 2
-    },
-    {
-      "keyword": "sell rental property las vegas",
-      "volume": 100,
-      "difficulty": 45,
-      "targetPage": "/situations/tenant-issues/",
-      "opportunityScore": 55,
       "priority": 2
     }
   ],
   "nationalBenchmarks": [
     {
-      "keyword": "we buy houses",
-      "volume": 14800,
-      "difficulty": 56,
-      "cpc": 109.58,
+      "keyword": "off-market land deals",
+      "volume": 1200,
+      "difficulty": 30,
+      "cpc": 20.0,
       "note": "National term - long-term target"
     },
     {
-      "keyword": "we buy ugly houses",
-      "volume": 5400,
-      "difficulty": 13,
-      "cpc": 127.34,
-      "note": "Low difficulty - create targeted content"
-    },
-    {
-      "keyword": "cash home buyers",
-      "volume": 6600,
-      "difficulty": 55,
-      "cpc": 197.81,
-      "note": "National term - focus on local variant"
-    },
-    {
-      "keyword": "we buy houses for cash",
-      "volume": 4400,
-      "difficulty": 58,
-      "cpc": 135.03,
-      "note": "National term - medium-term target"
-    },
-    {
-      "keyword": "cash home buyers near me",
-      "volume": 4400,
-      "difficulty": 63,
-      "cpc": 100.55,
-      "note": "Local SEO focus required"
+      "keyword": "land network investors",
+      "volume": 800,
+      "difficulty": 22,
+      "cpc": 15.0,
+      "note": "Medium difficulty - create targeted content"
     }
   ],
   "pageTargets": {
     "homepage": {
-      "primary": "we buy houses las vegas",
-      "secondary": ["we buy any vegas house", "we buy houses for cash las vegas", "cash home buyers las vegas", "fast vegas home buyers"],
+      "primary": "off-market land Las Vegas",
+      "secondary": ["paperlotland", "land deals Las Vegas Valley", "land network Las Vegas"],
       "targetPosition": 1
     },
-    "sellFastLandingPage": {
-      "primary": "sell my house fast las vegas",
-      "secondary": ["sell my house fast vegas", "sell my house fast in las vegas", "sell house fast las vegas"],
-      "currentPosition": 37,
+    "offMarketDealsPage": {
+      "primary": "off-market land network Nevada",
+      "secondary": ["land deals Las Vegas", "sell land Las Vegas", "land investor Las Vegas"],
+      "currentPosition": null,
       "targetPosition": 5,
-      "priority": "CRITICAL"
+      "priority": "HIGH"
     },
-    "comparisonPage": {
-      "primary": "we buy ugly houses reviews",
-      "secondary": ["best cash home buyers las vegas", "cash home buyers reviews"],
+    "resourcesPage": {
+      "primary": "zoning lookup Clark County Nevada",
+      "secondary": ["GIS parcel search Las Vegas", "Clark County GISMO"],
+      "targetPosition": 5
+    },
+    "availableLotsPage": {
+      "primary": "land for sale Clark County Nevada",
+      "secondary": ["vacant land Las Vegas", "land parcels Southern Nevada"],
       "targetPosition": 10
-    },
-    "anyConditionPage": {
-      "primary": "we buy ugly houses las vegas",
-      "secondary": ["sell house any condition", "distressed property buyers"],
-      "targetPosition": 20
     }
   },
-  "competitorPositions": {
-    "sellMyHouseFastLasVegas": {
-      "homelight.com": 2,
-      "homevestors.com": 3,
-      "lasvegas.webuyhouses.com": 4,
-      "opendoor.com": 5,
-      "houzeo.com": 6,
-      "webuyanyvegashouse.com": 37
-    },
-    "weBuyHousesLasVegas": {
-      "lasvegas.webuyhouses.com": 1,
-      "homelight.com": 2,
-      "webuyanyvegashouse.com": 3,
-      "andrewthehomebuyer.com": 4
-    }
-  }
+  "competitorPositions": {}
 }

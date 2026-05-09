@@ -104,44 +104,7 @@ function getFallbackReviews(): GoogleReviewsData {
   return {
     rating: GOOGLE_REVIEWS.rating,
     count: GOOGLE_REVIEWS.count,
-    reviews: [
-      {
-        name: 'Brad Chandler',
-        date: 'January 25, 2026',
-        text: "I've known the owner of We Buy Any Vegas House and his company for years, and I can confidently say they operate with integrity, professionalism, and genuine care for people. He's built a solid reputation in the Las Vegas market by doing things the right way and treating everyone with honesty and respect.",
-        rating: 5,
-      },
-      {
-        name: 'Lila Handous',
-        date: 'January 22, 2026',
-        text: "Casey was incredibly professional and pleasant to deal with. He was full of information and made the experience pleasant. Can't wait to work with him!",
-        rating: 5,
-      },
-      {
-        name: 'Christian Hernandez',
-        date: 'December 28, 2025',
-        text: 'Casey was very helpful in the process of buying our house. Very knowledgeable and answered all my questions I had. No stress whatsoever I was made felt comfortable with my decision to sell my house.',
-        rating: 5,
-      },
-      {
-        name: 'Alyssa Hernandez',
-        date: 'December 28, 2025',
-        text: "Casey with We Buy Any House is absolutely phenomenal!! He's very respectful, honest, straightforward, and most of all helpful! His knowledge is highly impressive and he's a very personable guy.",
-        rating: 5,
-      },
-      {
-        name: 'Sheli Long Elswick',
-        date: 'September 26, 2025',
-        text: 'Unbelievably easy! We agreed on a date for closing and they signed escrow the day before and I received my proceeds on the closing date. As a local Realtor for many years this was one of the easiest closings I have ever participated in.',
-        rating: 5,
-      },
-      {
-        name: 'Melisha Scholle',
-        date: 'September 3, 2025',
-        text: "Selling my house felt soooo stressful. I wasn't sure where to start and the thought of repairs stressed me out. Their team walked me through every step and made the process seem way easier than trying to sell with an agent.",
-        rating: 5,
-      },
-    ],
+    reviews: [],
     live: false,
   }
 }

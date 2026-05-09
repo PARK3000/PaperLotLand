@@ -7,11 +7,11 @@ import { SITE } from '@/lib/constants'
 import { BreadcrumbSchema } from '@/components/seo/breadcrumb-schema'
 
 export const metadata: Metadata = {
-  title: 'Las Vegas Home Selling Tips & Market Insights | WBAVH Blog',
-  description: 'Expert tips for selling your Las Vegas home — market trends, closing costs, tax advice, and neighborhood guides from local real estate investors since 2016.',
+  title: 'Las Vegas Land Investing Insights & Off-Market Deal Strategy | PaperLotLand Blog',
+  description: 'Land development insights, Clark County zoning resources, and off-market deal strategy for Las Vegas Valley investors and developers.',
   openGraph: {
-    title: 'Las Vegas Home Selling Tips & Market Insights | WBAVH Blog',
-    description: 'Expert tips for selling your Las Vegas home — market trends, closing costs, and neighborhood guides.',
+    title: 'Las Vegas Land Investing Insights & Off-Market Deal Strategy | PaperLotLand Blog',
+    description: 'Land development insights, Clark County zoning resources, and off-market deal strategy for Las Vegas Valley investors and developers.',
     images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],
   },
   alternates: {
@@ -44,7 +44,7 @@ export default async function BlogPage() {
       <section className="bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-700)] py-20 text-white">
         <div className="container-custom">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-4xl font-bold md:text-5xl">Las Vegas Real Estate Insights & Cash-Sale Guides</h1>
+            <h1 className="text-4xl font-bold md:text-5xl">Las Vegas Land Market Insights & Off-Market Deal Strategy</h1>
             <p className="mt-6 text-xl text-white/90">
               Expert advice and insights to help you make informed decisions.
               Tips, guides, and resources from our team.

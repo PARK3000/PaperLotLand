@@ -93,7 +93,7 @@ export default function AdminLoginPage() {
             </svg>
           </div>
           <h1 className="text-2xl font-bold text-gray-900">Admin Panel</h1>
-          <p className="text-sm text-gray-500 mt-1">We Buy Any Vegas House</p>
+          <p className="text-sm text-gray-500 mt-1">PaperLotLand</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-2xl shadow-sm p-6">
           <Suspense fallback={<div className="text-sm text-gray-400">Loading…</div>}>

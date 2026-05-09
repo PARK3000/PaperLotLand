@@ -339,16 +339,15 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <div className="mt-6 space-y-2 text-[var(--color-text-light)]">
                   <p className="font-semibold text-[var(--color-text)]">
-                    We Buy Any Vegas House
+                    PaperLotLand
                   </p>
-                  <p>9159 W Flamingo Rd Ste 110</p>
-                  <p>Las Vegas, NV 89147</p>
+                  <p>Las Vegas, NV</p>
                   <p>
                     <a
-                      href="mailto:info@webuyanyvegashouse.com"
+                      href="mailto:info@paperlotland.com"
                       className="text-[var(--color-primary)] hover:underline"
                     >
-                      info@webuyanyvegashouse.com
+                      info@paperlotland.com
                     </a>
                   </p>
                 </div>

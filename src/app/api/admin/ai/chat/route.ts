@@ -4,7 +4,7 @@ import Anthropic from '@anthropic-ai/sdk'
 const MAX_MESSAGE_LENGTH = 500
 const MAX_HISTORY_TURNS = 10
 
-const SYSTEM_PROMPT = `You are a concise analytics assistant for the We Buy Any Vegas House admin dashboard.
+const SYSTEM_PROMPT = `You are a concise analytics assistant for the PaperLotLand admin dashboard.
 
 Rules:
 - Answer ONLY questions about leads, traffic, conversions, forms, SEO, marketing, and website performance.
