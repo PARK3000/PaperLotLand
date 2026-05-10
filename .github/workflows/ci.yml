@@ -37,7 +37,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          NEXT_PUBLIC_SITE_URL: https://webuyanyvegashouse.com
+          NEXT_PUBLIC_SITE_URL: https://paperlotland.com
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium
@@ -45,7 +45,7 @@ jobs:
       - name: Run E2E tests
         run: npm run test:e2e
         env:
-          NEXT_PUBLIC_SITE_URL: https://webuyanyvegashouse.com
+          NEXT_PUBLIC_SITE_URL: https://paperlotland.com
 
       - name: Upload Playwright report
         uses: actions/upload-artifact@v4

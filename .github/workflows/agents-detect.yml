@@ -61,7 +61,7 @@ jobs:
           GOOGLE_SERVICE_ACCOUNT_B64: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_B64 }}
           POSTHOG_PERSONAL_API_KEY: ${{ secrets.POSTHOG_PERSONAL_API_KEY }}
           NEXT_PUBLIC_POSTHOG_HOST: ${{ secrets.NEXT_PUBLIC_POSTHOG_HOST }}
-          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://webuyanyvegashouse.com' }}
+          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://paperlotland.com' }}
         run: npx tsx scripts/agents/detect.ts --mode=${{ matrix.mode }}
 
       - name: Notify Slack on canary failure
@@ -95,5 +95,5 @@ jobs:
       - name: Auto-close recovered issues
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://webuyanyvegashouse.com' }}
+          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://paperlotland.com' }}
         run: npx tsx scripts/agents/detect.ts --mode=auto-close

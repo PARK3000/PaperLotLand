@@ -6,7 +6,6 @@
     "dev": "next dev -H 0.0.0.0",
     "prebuild": "npx tsx scripts/validate-blog-images.ts && npx tsx scripts/setup-db.ts",
     "build": "next build",
-    "postbuild": "npx tsx scripts/ping-indexnow.ts",
     "validate:blog-images": "npx tsx scripts/validate-blog-images.ts",
     "start": "next start",
     "lint": "next lint",

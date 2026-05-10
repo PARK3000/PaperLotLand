@@ -47,7 +47,7 @@ jobs:
           ACTIVECAMPAIGN_API_KEY: ${{ secrets.ACTIVECAMPAIGN_API_KEY }}
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
           NOTIFICATION_EMAIL: ${{ secrets.NOTIFICATION_EMAIL }}
-          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://webuyanyvegashouse.com' }}
+          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://paperlotland.com' }}
         run: |
           ARGS=""
           if [ "${{ github.event.inputs.send_email }}" = "true" ] || [ "${{ github.event_name }}" = "schedule" ]; then

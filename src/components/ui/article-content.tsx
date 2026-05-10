@@ -3,9 +3,6 @@
 import Image from 'next/image'
 import { slugify } from '@/lib/utils'
 import { MidArticleCta } from './mid-article-cta'
-import { ClosingCostCalculator } from './closing-cost-calculator'
-import { CashOfferSlider } from './cash-offer-slider'
-import { ComparisonCard } from './comparison-card'
 
 export { extractTocItems } from './article-content-utils'
 
@@ -358,22 +355,6 @@ export function ArticleContent({ content }: ArticleContentProps) {
         )
         return
       }
-    }
-
-    // Widget embeds
-    if (trimmed === '::closing-cost-calculator::') {
-      elements.push(<ClosingCostCalculator key={index} />)
-      return
-    }
-
-    if (trimmed === '::cash-offer-slider::') {
-      elements.push(<CashOfferSlider key={index} />)
-      return
-    }
-
-    if (trimmed === '::comparison-card::') {
-      elements.push(<ComparisonCard key={index} />)
-      return
     }
 
     // Regular paragraph

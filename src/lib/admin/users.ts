@@ -25,7 +25,7 @@ function getDb() {
 }
 
 export function hashPassword(password: string, userId: string): string {
-  const secret = process.env.ADMIN_SESSION_SECRET || 'wbavh-admin-secret-change-me'
+  const secret = process.env.ADMIN_SESSION_SECRET || 'change-me-set-ADMIN_SESSION_SECRET'
   return createHash('sha256').update(`${password}:${userId}:${secret}`).digest('hex')
 }
 

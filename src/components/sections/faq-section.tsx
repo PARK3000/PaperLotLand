@@ -102,7 +102,7 @@ export function FAQSection({
             </p>
             <div className="mt-4">
               <Link
-                href="/contact-us/"
+                href="/contact/"
                 className={buttonClassName({ variant: 'primary', size: 'lg' })}
               >
                 Contact Us

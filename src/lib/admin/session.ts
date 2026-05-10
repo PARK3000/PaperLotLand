@@ -33,7 +33,7 @@ function fromBase64url(b64url: string): string {
 }
 
 function secret(): string {
-  return process.env.ADMIN_SESSION_SECRET || 'wbavh-admin-secret-change-me'
+  return process.env.ADMIN_SESSION_SECRET || 'change-me-set-ADMIN_SESSION_SECRET'
 }
 
 /** Create a signed session cookie value */

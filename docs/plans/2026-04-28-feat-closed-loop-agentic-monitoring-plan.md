@@ -15,7 +15,7 @@ A daily-running detection → fix → verify → close loop using **GitHub Issue
 
 Auto-fix is gated by a single env var: `MONITOR_AUTOFIX=true|false`. No phase ceremony — flip the flag when the system is trusted.
 
-Scope: single repo (`wbv-website-v2`), daily cadence, two fix types day-one (`fix:meta`, `fix:alt`), Claude-native end-to-end.
+Scope: single repo (`paperlotland`), daily cadence, two fix types day-one (`fix:meta`, `fix:alt`), Claude-native end-to-end.
 
 ## Problem Statement
 
@@ -50,7 +50,7 @@ Goal: detect, fix, verify, close. Humans only at the merge checkpoint.
 The site's canonical URL form is **already established and stable**:
 
 - Pages serve at `/path/` (Next.js `trailingSlash: true` since `3964256`)
-- `siteUrl` in `config/site.config.json` is the **bare** form `https://webuyanyvegashouse.com` (no trailing slash). Build-time guard in `src/lib/config.ts` throws if anyone re-adds one. (Reason: `fa1e4d5` added a trailing slash to `siteUrl`, producing 152 double-slash URLs in the sitemap; `9064263` reverted and locked it.)
+- `siteUrl` in `config/site.config.json` is the **bare** form `https://paperlotland.com` (no trailing slash). Build-time guard in `src/lib/config.ts` throws if anyone re-adds one. (Reason: `fa1e4d5` added a trailing slash to `siteUrl`, producing 152 double-slash URLs in the sitemap; `9064263` reverted and locked it.)
 - Sitemap, redirects, JSON-LD, per-page canonicals all consistent. Pages indexed by Google in this form.
 
 **No site changes are needed for this monitoring loop.** Earlier revisions of this plan referenced an untracked draft (`docs/PLAN-remove-trailing-slashes.md`) as a prerequisite — that was wrong. The current URL form is correct and shipped.
@@ -137,14 +137,14 @@ Detection writes structured sections under known H2 headings. Fix and verify par
 ```markdown
 ## Symptom
 
-Title tag on `https://webuyanyvegashouse.com/henderson/` regressed.
-Expected: "We Buy Houses Henderson NV — Cash Offers in 24 Hours"
+Title tag on `https://paperlotland.com/resources/henderson/` regressed.
+Expected: "Henderson Land Resources & Zoning Codes — PaperLotLand"
 Found: "Henderson"
 
 ## Evidence
 
 - GSC: https://search.google.com/search-console/...
-- Live page: https://webuyanyvegashouse.com/henderson/
+- Live page: https://paperlotland.com/resources/henderson/
 - Detected at: 2026-04-29T15:03:22Z
 - Detector run: https://github.com/.../actions/runs/123456
 - Prompt version: detect-seo@2026-04-29-r1

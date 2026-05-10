@@ -69,7 +69,7 @@ Las Vegas Valley off-market land network. Connects developers, brokers, and inve
 
 ### Core
 - `/` — Homepage (hero, trust stats, closed sales gallery, how it works, value props, lead form, resources, FAQ)
-- `/about/` — About Casey Ryan & PaperLotLand
+- `/about/` — About Parker Gibbons & PaperLotLand
 - `/available-lots/` — Current available parcels
 - `/closed-sales/` — Past closed deals gallery
 - `/off-market-deals/` — Lead capture — join the off-market network

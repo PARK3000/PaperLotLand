@@ -59,7 +59,7 @@
     "signature": "canary:robots-txt-directive-present",
     "check": {
       "kind": "fetch_and_assert",
-      "url": "https://webuyanyvegashouse.com/robots.txt",
+      "url": "https://paperlotland.com/robots.txt",
       "must_contain": "User-agent:"
     },
     "expected_message": "Synthetic canary: robots.txt fetched and contains a User-agent directive. If you see this in an issue, the canary should have been suppressed — investigate detect.ts."
@@ -74,7 +74,7 @@
         "title_max": 60,
         "description_min": 100,
         "description_max": 170,
-        "sitemap_url": "https://webuyanyvegashouse.com/sitemap.xml",
+        "sitemap_url": "https://paperlotland.com/sitemap.xml",
         "max_concurrent_fetches": 5,
         "fetch_timeout_ms": 10000
       },

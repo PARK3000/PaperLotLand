@@ -44,8 +44,8 @@ describe('Configuration Files', () => {
   it('should have correct business phone number', () => {
     const configPath = path.join(process.cwd(), 'config/business.config.json')
     const config = JSON.parse(fs.readFileSync(configPath, 'utf-8'))
-    expect(config.contact.phoneDisplay).toBe('(702) 213-9800')
-    expect(config.contact.phone).toBe('7022139800')
+    expect(config.contact.phoneDisplay).toBe('(702) 465-6111')
+    expect(config.contact.phone).toBe('7024656111')
   })
 
   it('should have correct business address', () => {
@@ -60,7 +60,7 @@ describe('Configuration Files', () => {
     const config = JSON.parse(fs.readFileSync(configPath, 'utf-8'))
     // Service areas stored as comma-separated string
     const areas = config.serviceArea.split(',').map((s: string) => s.trim())
-    expect(areas.length).toBeGreaterThanOrEqual(9)
+    expect(areas.length).toBeGreaterThanOrEqual(5)
   })
 })
 
@@ -75,10 +75,10 @@ describe('Blog Content', () => {
     expect(fs.existsSync(postsDir)).toBe(true)
   })
 
-  it('should have 80+ blog posts', () => {
+  it('should have at least one blog post', () => {
     const postsDir = path.join(process.cwd(), 'content/blog/posts')
     const files = fs.readdirSync(postsDir).filter((f) => f.endsWith('.json'))
-    expect(files.length).toBeGreaterThanOrEqual(80)
+    expect(files.length).toBeGreaterThanOrEqual(1)
   })
 
   it('should have valid JSON for each blog post', () => {

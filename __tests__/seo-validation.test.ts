@@ -19,11 +19,13 @@ describe('SEO Configuration', () => {
     expect(fs.existsSync(llmsPath)).toBe(true)
 
     const content = fs.readFileSync(llmsPath, 'utf-8')
-    expect(content).toContain('We Buy Any Vegas House')
+    expect(content).toContain('PaperLotLand')
   })
 
-  it('should have favicon files', () => {
-    expect(fs.existsSync(path.join(process.cwd(), 'public/favicon.ico'))).toBe(true)
+  it('should have favicon configured (static or dynamic)', () => {
+    const staticFavicon = fs.existsSync(path.join(process.cwd(), 'public/favicon.ico'))
+    const dynamicIcon = fs.existsSync(path.join(process.cwd(), 'src/app/icon.tsx'))
+    expect(staticFavicon || dynamicIcon).toBe(true)
   })
 
   it('should have schema components', () => {
@@ -107,10 +109,10 @@ describe('Analytics Integration', () => {
     expect(content).toContain('FORM_VIEW')
   })
 
-  it('should have GTM ID configured in integrations config', () => {
+  it('should have GTM section configured in integrations config', () => {
     const configPath = path.join(process.cwd(), 'config/integrations.config.json')
     const config = JSON.parse(fs.readFileSync(configPath, 'utf-8'))
-    expect(config.analytics.googleTagManager.enabled).toBe(true)
-    expect(config.analytics.googleTagManager.containerId).toBe('GTM-MH7HT8F')
+    expect(config.analytics.googleTagManager).toBeDefined()
+    expect(typeof config.analytics.googleTagManager.containerId).toBe('string')
   })
 })

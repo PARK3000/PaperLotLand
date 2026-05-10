@@ -195,8 +195,8 @@ export default async function BlogPostPage({ params }: PageProps) {
                       {post.author} is part of the {BUSINESS.name} team.
                       {FOUNDER.bio && ` ${FOUNDER.bio}`}
                     </p>
-                    <Link href="/team/" className="mt-3 inline-block text-sm font-medium text-[var(--color-primary)] hover:underline">
-                      Learn more about our team &rarr;
+                    <Link href="/about/" className="mt-3 inline-block text-sm font-medium text-[var(--color-primary)] hover:underline">
+                      Learn more about us &rarr;
                     </Link>
                   </div>
                 </div>

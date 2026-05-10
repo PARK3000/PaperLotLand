@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest'
 import fs from 'fs'
 import path from 'path'
 import { CATEGORY_URL_MAP } from '@/lib/blog'
+import { JURISDICTIONS } from '@/lib/constants'
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -66,6 +67,11 @@ function buildRouteRegistry(): Set<string> {
 
   // 3. Known dynamic patterns (pagination, API, etc.)
   routes.add('/api/leads/')
+
+  // 4. Jurisdiction resource pages — handled by /resources/[jurisdiction]/page.tsx
+  for (const j of JURISDICTIONS) {
+    routes.add(`/resources/${j.slug}/`)
+  }
 
   return routes
 }

@@ -14,12 +14,12 @@ import { readFileSync } from 'fs'
 import { resolve } from 'path'
 
 // Default admin credentials — change via the Users page after first login
-const DEFAULT_ADMIN_EMAIL = 'admin@webuyanyvegashouse.com'
+const DEFAULT_ADMIN_EMAIL = 'admin@paperlotland.com'
 const DEFAULT_ADMIN_PASSWORD = 'Admin@Vegas2026'
 const DEFAULT_ADMIN_NAME = 'Admin'
 
 function hashPassword(password: string, userId: string): string {
-  const secret = process.env.ADMIN_SESSION_SECRET || 'wbavh-admin-secret-change-me'
+  const secret = process.env.ADMIN_SESSION_SECRET || 'change-me-set-ADMIN_SESSION_SECRET'
   return createHash('sha256').update(`${password}:${userId}:${secret}`).digest('hex')
 }
 

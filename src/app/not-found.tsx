@@ -24,7 +24,7 @@ export default function NotFound() {
             Go to Homepage
           </Link>
           <Link
-            href="/contact-us/"
+            href="/contact/"
             className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-3 font-semibold text-white transition-colors hover:border-white hover:bg-white/10"
           >
             Contact Us
