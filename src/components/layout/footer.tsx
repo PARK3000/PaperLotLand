@@ -100,11 +100,11 @@ export function Footer({
           </div>
         </div>
 
-        {/* Disclaimer */}
+{/* Disclaimer */}
         <div className="py-6 text-center">
           <p className="text-sm text-gray-400">
             <span className="font-semibold">*If your property is currently listed this is not intended as a solicitation*</span>
-{' '}Owner is licensed Real Estate Agent in the State of Nevada License #S.181333 Parker Gibbons, Galindo Group Real Estate, Broker Joshua Galindo B.1001607.LLC 4160 S Durango #120 Las Vegas NV 89147
+            {' '}Owner is licensed Real Estate Agent in the State of Nevada License #S.181333 Parker Gibbons, Galindo Group Real Estate, Broker Joshua Galindo B.1001607.LLC 4160 S Durango #120 Las Vegas NV 89147
           </p>
         </div>
 
