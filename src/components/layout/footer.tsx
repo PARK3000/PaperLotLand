@@ -100,7 +100,7 @@ export function Footer({
           </div>
         </div>
 
-{/* Disclaimer */}
+        {/* Disclaimer */}
         <div className="py-6 text-center">
           <p className="text-sm text-gray-400">
             <span className="font-semibold">*If your property is currently listed this is not intended as a solicitation*</span>
