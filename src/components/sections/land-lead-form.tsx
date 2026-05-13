@@ -160,7 +160,7 @@ export function LandLeadForm({ variant = 'standard', heading }: Props) {
             </div>
           </>
         )}
-        {/* submit */}
+        {variant !== 'full' && null}
         <button
           type="submit"
           disabled={loading}
