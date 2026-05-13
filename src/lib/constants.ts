@@ -19,7 +19,7 @@ export const BUSINESS = {
   email: businessConfig.contact.email,
   address: `${businessConfig.address.street} ${businessConfig.address.suite || ''}, ${businessConfig.address.city}, ${businessConfig.address.state} ${businessConfig.address.zip}`.trim(),
   hours: businessConfig.hoursDisplay || 'Mon–Fri 9 AM – 5 PM',
-  license: 'S.181333 Parker Gibbons, Galindo Group Real Estate, Broker Joshua Galindo B.1001607.LLC 4160 S Durango #120 Las Vegas NV 89147',
+  license: ' S.181333 Parker Gibbons, Galindo Group Real Estate, Broker Joshua Galindo B.1001607.LLC 4160 S Durango #120 Las Vegas NV 89147',
   yearFounded: businessConfig.yearEstablished || '2020',
   serviceArea: businessConfig.serviceArea || 'Clark County, NV',
 }
