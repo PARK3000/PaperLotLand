@@ -16,7 +16,6 @@ export function Footer({
   navigation?: NavigationContent
 } = {}) {
   const phone = businessData?.phone ?? BUSINESS.phone
-  const license = businessData?.license ?? BUSINESS.license
   const footerMain = navigation?.footerNav.main ?? FOOTER_NAV.main
   const footerSecondary = navigation?.footerNav.secondary ?? FOOTER_NAV.secondary
   const pathname = usePathname()
