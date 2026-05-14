@@ -9,7 +9,7 @@ import Link from 'next/link'
 import { LandLeadForm } from '@/components/sections/land-lead-form'
 import { FAQSection } from '@/components/sections/faq-section'
 
-export const revalidate = 86400
+export const revalidate = 0
 
 export const metadata: Metadata = {
   title: 'PaperLotLand | Off-Market Land Deals in Las Vegas',
