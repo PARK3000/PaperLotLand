@@ -155,7 +155,7 @@ export function LandLeadForm({ variant = 'standard', heading }: Props) {
               </select>
             </div>
             <div>
-              <label className={labelClass} htmlFor="message">Notes / Details <span className="font-normal normal-case">(optional)</span></label>
+              <label className={labelClass}>Notes / Details <span className="font-normal normal-case">(optional)</span></label>
               <textarea id="message" name="message" rows={3} className={inputClass} placeholder="Location preference, timeline, specific criteria…" value={fields.message} onChange={handleChange} />
             </div>
           </>
