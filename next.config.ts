@@ -22,7 +22,7 @@ const nextConfig: NextConfig = {
     return []
   },
   async headers() {
-    const PAGE_CACHE = 'public, s-maxage=86400, stale-while-revalidate=604800'
+    const PAGE_CACHE = 'public, s-maxage=0, must-revalidate'
     const STATIC_CACHE = 'public, max-age=2592000, stale-while-revalidate=604800'
     return [
       { source: '/', headers: [{ key: 'Cache-Control', value: PAGE_CACHE }] },
