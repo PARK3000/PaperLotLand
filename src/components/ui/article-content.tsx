@@ -138,6 +138,16 @@ interface ArticleContentProps {
 }
 
 export function ArticleContent({ content }: ArticleContentProps) {
+  // If content is HTML, render it directly
+  if (content.trim().startsWith('<')) {
+    return (
+      <div
+        className="prose prose-lg max-w-none"
+        dangerouslySetInnerHTML={{ __html: content }}
+      />
+    )
+  }
+
   const paragraphs = content.split('\n\n').filter((p) => p.trim())
 
   let h2Count = 0
