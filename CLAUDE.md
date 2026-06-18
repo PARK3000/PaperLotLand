@@ -212,3 +212,4 @@ npx tsx scripts/setup-db.ts
 # Lead notifications enabled Thu Jun 18 18:12:37 UTC 2026
 # Report recipient configured Thu Jun 18 18:47:24 UTC 2026
 # Update notification email Thu Jun 18 19:03:28 UTC 2026
+# Add REPORT_FROM_EMAIL Thu Jun 18 19:52:05 UTC 2026
