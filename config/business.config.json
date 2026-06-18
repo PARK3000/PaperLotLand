@@ -13,11 +13,11 @@
   },
 
   "address": {
-    "street": "",
-    "suite": "",
+    "street": "4160 S Durango",
+    "suite": "#120",
     "city": "Las Vegas",
     "state": "NV",
-    "zip": "",
+    "zip": "89147",
     "country": "US"
   },
 
