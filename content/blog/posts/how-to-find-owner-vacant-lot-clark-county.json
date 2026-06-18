@@ -1,0 +1,40 @@
+{
+  "slug": "how-to-find-owner-vacant-lot-clark-county",
+  "title": "How to Find the Owner of a Vacant Lot in Clark County",
+  "excerpt": "The best land deals start with a direct conversation with the owner. Here's exactly how to find who owns any vacant parcel in Clark County — and how to reach them.",
+  "category": "Land Development",
+  "author": "Parker Gibbons",
+  "publishedAt": "2026-07-22",
+  "updatedAt": "2026-07-22",
+  "readTime": "6 min read",
+  "featured": false,
+  "image": "/images/blog/off-market-land-las-vegas.jpg",
+  "imageAlt": "Clark County Assessor website showing parcel ownership lookup for vacant land",
+  "seo": {
+    "title": "How to Find the Owner of a Vacant Lot in Clark County | PaperLotLand",
+    "description": "Step-by-step guide to finding the owner of any vacant lot in Clark County, Nevada using the Assessor's office, GISMO, and public records.",
+    "keywords": ["find owner vacant lot clark county", "clark county assessor parcel search", "who owns land las vegas", "nevada land ownership lookup", "clark county property owner search"]
+  },
+  "keyTakeaways": [
+    "The Clark County Assessor's website lets you search any parcel by APN or address and see the owner's name and mailing address.",
+    "GISMO provides the APN for any parcel you click on the map — use it to start your Assessor search.",
+    "Owner mailing addresses in the Assessor's records are the best address for direct mail outreach.",
+    "LLCs and trusts often own land — additional research may be needed to identify the individual behind the entity.",
+    "Direct outreach to landowners — letters, phone calls, or personal visits — is how most off-market deals get sourced."
+  ],
+  "content": "<h2>Why Finding the Owner Is the First Step</h2><p>In residential real estate, most deals start with a listing. In land, the best deals start with a conversation. A landowner who has held a parcel for twenty years, who has never listed it publicly, and who might be open to the right offer — that person is not going to come to you. You have to find them.</p><p>The good news is that property ownership in Nevada is a matter of public record. Anyone can look up who owns any parcel in Clark County, what their mailing address is, and how long they've owned it. The tools to do this are free and publicly available. The edge is knowing how to use them efficiently.</p><h2>Step 1: Get the APN from GISMO</h2><p>Every parcel in Clark County has an Assessor Parcel Number (APN) — a unique identifier in the format XXX-XX-XXX-XXX. The APN is the key that unlocks all the public records associated with a parcel.</p><p>To find the APN for any parcel, go to Clark County GISMO at maps.clarkcountynv.gov/openweb/. Navigate to the parcel on the map — you can search by address or just zoom and click — and then click directly on it. The popup that appears will include the APN.</p><p>Write it down or copy it. You'll use it in the next step.</p><h2>Step 2: Look Up Ownership in the Clark County Assessor's Records</h2><p>Go to the Clark County Assessor's parcel search at assessor.clarkcountynv.gov. Enter the APN you found in GISMO and pull up the parcel record. You'll see the owner's name, the owner's mailing address (which may be different from the property address), the assessed value, tax history, and the legal description.</p><p>The mailing address is the critical piece of information. This is the address where tax bills are sent — and it's the address where a direct mail letter will reach the owner. For owners who live locally, the mailing address is often their home or business. For out-of-state owners, it may be an address in another state entirely.</p><h2>Step 3: Research the Entity if Needed</h2><p>A significant portion of land in Clark County is owned by LLCs, trusts, corporations, or other entities. When the owner shows up as 'Smith Family Trust' or 'Nevada Desert Holdings LLC,' you need to do a bit more research to find the person behind the entity.</p><p>For Nevada LLCs, the Nevada Secretary of State's business search at esos.nv.gov lets you look up any registered entity and see its registered agent, members, and managers. This often reveals the individual name you're looking for.</p><p>For trusts, the grantor's name is sometimes visible in the assessor records or in recorded deed documents. Pull the deed from the Clark County Recorder's office at clarkcountyrecorder.com — the deed will show how title was vested and may reveal the trustee's name.</p><h2>Step 4: Check the Clark County Recorder for Additional History</h2><p>The Clark County Recorder's office maintains records of all recorded documents — deeds, mortgages, liens, easements, and more. Searching by APN or owner name can reveal the full chain of title, when the parcel was acquired, what was paid for it, and whether there are any recorded liens or encumbrances.</p><p>This research takes 20 to 30 minutes per parcel but gives you a complete picture of the ownership history. Knowing that a landowner has held a parcel for 30 years, paid $50,000 for it, and has no mortgage against it tells you a lot about their motivations and flexibility on price.</p><h2>Step 5: Make Contact</h2><p>Once you have the owner's name and mailing address, you have several options for outreach. A personal letter sent to the mailing address is the most common and often the most effective approach for vacant land. Keep it brief, professional, and specific — mention the parcel by address or APN, state that you're interested in purchasing it, and provide your contact information.</p><p>Response rates vary widely depending on the owner's motivation, the quality of your letter, and timing. Typical response rates for cold land outreach run from 0.5% to 3%. A single positive response can be worth significant money on the right parcel.</p><p>If the owner is a local business or individual, a phone call or in-person visit may also be appropriate. For institutional or corporate owners, a formal letter of interest on company letterhead often works better than a personal approach.</p>",
+  "faqs": [
+    {
+      "question": "Is property ownership public record in Nevada?",
+      "answer": "Yes. Property ownership in Nevada is a matter of public record. The Clark County Assessor's office maintains parcel ownership records that are publicly accessible online at no cost."
+    },
+    {
+      "question": "What if the owner is an LLC or trust?",
+      "answer": "For Nevada LLCs, search the Nevada Secretary of State's business database at esos.nv.gov to find registered agents and members. For trusts, pull the recorded deed from the Clark County Recorder's office, which may reveal the trustee's name."
+    },
+    {
+      "question": "Can I find out what someone paid for a parcel?",
+      "answer": "Yes. The Clark County Recorder's office records all deeds, and most recorded deeds in Nevada include the transfer tax amount, from which the sale price can be calculated. You can also see the recorded sale price in the Assessor's records for recent transactions."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "unincorporated-clark-county-vs-city-of-las-vegas-land",
+  "title": "The Difference Between Unincorporated Clark County and City of Las Vegas Land",
+  "excerpt": "Many buyers don't realize that 'Las Vegas' isn't one jurisdiction. The difference between unincorporated Clark County and the City of Las Vegas can significantly affect what you can build and how long it takes.",
+  "category": "Zoning Resources",
+  "author": "Parker Gibbons",
+  "publishedAt": "2026-07-15",
+  "updatedAt": "2026-07-15",
+  "readTime": "6 min read",
+  "featured": false,
+  "image": "/images/blog/clark-county-zoning.jpg",
+  "imageAlt": "Map showing jurisdictional boundaries between Clark County and City of Las Vegas",
+  "seo": {
+    "title": "Unincorporated Clark County vs City of Las Vegas Land | PaperLotLand",
+    "description": "Understanding the jurisdictional differences between unincorporated Clark County and the City of Las Vegas — and why it matters for land development and investment.",
+    "keywords": ["unincorporated clark county land", "city of las vegas land", "clark county vs las vegas jurisdiction", "nevada land development jurisdiction", "las vegas zoning jurisdiction"]
+  },
+  "keyTakeaways": [
+    "The Las Vegas Valley contains multiple separate jurisdictions — Clark County, City of Las Vegas, Henderson, North Las Vegas, Boulder City, and Mesquite.",
+    "Unincorporated Clark County is governed by the County Commission and uses the Unified Development Code (UDC).",
+    "The City of Las Vegas is a separate municipality with its own planning department, zoning code, and development review process.",
+    "The Strip — contrary to popular belief — is mostly in unincorporated Clark County, not the City of Las Vegas.",
+    "Understanding which jurisdiction a parcel falls in is the first step in any entitlement or development analysis."
+  ],
+  "content": "<h2>The Jurisdiction Confusion That Trips Up Buyers</h2><p>When most people say 'Las Vegas,' they mean the entire metro area — everything from Henderson to Summerlin, from North Las Vegas to the Strip. But from a land and zoning perspective, 'Las Vegas' is a specific municipality with a specific boundary. And a surprisingly large portion of what people call Las Vegas is actually unincorporated Clark County, governed by a completely different set of rules.</p><p>Getting this wrong — assuming a parcel is in one jurisdiction when it's actually in another — can mean applying to the wrong planning department, using the wrong development code, and having to restart an entitlement process from scratch. It's an avoidable mistake that costs time and money.</p><h2>The Jurisdictions of the Las Vegas Valley</h2><p>The Las Vegas Valley contains six separate incorporated municipalities plus the unincorporated county. The municipalities are: the City of Las Vegas, Henderson, North Las Vegas, Boulder City, Mesquite, and the Town of Laughlin. Each has its own city or town government, its own planning department, and its own development code.</p><p>Everything outside those municipal boundaries that sits within Clark County is unincorporated Clark County — governed directly by the Clark County Commission and administered by the Clark County Planning Department.</p><p>Unincorporated Clark County is by far the largest jurisdiction by land area, encompassing most of the Las Vegas Strip corridor, the Enterprise area, Spring Valley, Summerlin's eastern portions, and vast stretches of rural and desert land throughout the county.</p><h2>What Governs Each Jurisdiction</h2><p>Unincorporated Clark County uses the Unified Development Code (UDC), a comprehensive document that covers zoning districts, permitted uses, design standards, subdivision regulations, and development review procedures. The UDC is administered by the Clark County Planning Department, and major approvals go before the Clark County Planning Commission and the Board of County Commissioners.</p><p>The City of Las Vegas has its own Unified Development Code, separate from the county's. The city's planning department handles permit applications, and major approvals go before the City Planning Commission and the City Council.</p><p>Henderson, North Las Vegas, and Boulder City each have their own separate development codes and planning departments as well.</p><h2>The Strip Is Not in the City of Las Vegas</h2><p>This surprises almost everyone who doesn't work in the industry: the Las Vegas Strip — Caesars Palace, the Bellagio, the MGM Grand, most of the iconic casino resorts — is not in the City of Las Vegas. It's in the unincorporated county, in a district sometimes called Paradise.</p><p>The City of Las Vegas actually governs the downtown Fremont Street corridor, the Arts District, and surrounding neighborhoods north and east of the Strip. If you see a project near Fremont Street or in the downtown arts district, it's likely in the City. If it's on the Strip, it's almost certainly county.</p><h2>Why This Matters for Land Development</h2><p>The jurisdictional split matters for several practical reasons. Development review processes differ. Timelines differ. Application fees differ. Design standards differ. What's permitted by right in one jurisdiction may require a special use permit in another.</p><p>For example, Clark County's UDC is generally considered more developer-friendly than some of the incorporated cities for certain commercial and industrial uses. The county has made deliberate efforts to streamline its development review process in recent years. But the City of Las Vegas may have advantages for specific downtown-adjacent projects where city policy priorities align with a developer's program.</p><p>Before you underwrite any land deal in the Las Vegas Valley, the first step is to confirm which jurisdiction the parcel sits in. You can do this in GISMO by clicking the parcel and reading the jurisdiction field, or by calling the relevant planning department directly.</p><h2>How to Confirm Jurisdiction</h2><p>The most reliable way to confirm jurisdiction is to use Clark County GISMO at maps.clarkcountynv.gov/openweb/. Click on the parcel and look for the jurisdiction field in the popup. It will indicate whether the parcel is in unincorporated Clark County or one of the incorporated cities.</p><p>You can also call the Clark County Assessor's office or the relevant planning department. Title reports also typically identify the governing jurisdiction. When in doubt, confirm before you proceed — the cost of getting it wrong is too high.</p>",
+  "faqs": [
+    {
+      "question": "How do I find out which jurisdiction a Las Vegas parcel is in?",
+      "answer": "Use Clark County GISMO at maps.clarkcountynv.gov/openweb/. Click the parcel and look for the jurisdiction field. You can also confirm by calling the Clark County Assessor's office or the relevant planning department."
+    },
+    {
+      "question": "Is the Las Vegas Strip in the City of Las Vegas?",
+      "answer": "No. The Las Vegas Strip — including most of the major casino resorts — is in unincorporated Clark County, in an area sometimes called Paradise. The City of Las Vegas governs the Fremont Street downtown corridor and surrounding neighborhoods."
+    },
+    {
+      "question": "Do I apply to Clark County or the City of Las Vegas for permits?",
+      "answer": "It depends entirely on which jurisdiction your parcel is in. Unincorporated Clark County parcels go through the Clark County Planning Department. City of Las Vegas parcels go through the City's planning department. Confirm the jurisdiction before submitting any applications."
+    }
+  ]
+}

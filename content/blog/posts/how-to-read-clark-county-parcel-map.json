@@ -1,0 +1,40 @@
+{
+  "slug": "how-to-read-clark-county-parcel-map",
+  "title": "How to Read a Clark County Parcel Map: A Step-by-Step Guide",
+  "excerpt": "Clark County's GISMO portal gives you direct access to parcel ownership, zoning, and boundary data — but only if you know how to use it. Here's a practical walkthrough for developers and investors.",
+  "category": "Zoning Resources",
+  "author": "Parker Gibbons",
+  "publishedAt": "2026-06-24",
+  "updatedAt": "2026-06-24",
+  "readTime": "7 min read",
+  "featured": false,
+  "image": "/images/blog/clark-county-zoning.jpg",
+  "imageAlt": "Clark County GISMO parcel map showing land boundaries",
+  "seo": {
+    "title": "How to Read a Clark County Parcel Map | PaperLotLand",
+    "description": "A step-by-step guide to using Clark County GISMO for parcel lookup, APN search, ownership data, and zoning overlays in the Las Vegas Valley.",
+    "keywords": ["clark county parcel map", "clark county gismo", "APN lookup nevada", "clark county land search", "las vegas parcel data"]
+  },
+  "keyTakeaways": [
+    "GISMO is Clark County's free GIS portal — use it to find any parcel by address, APN, or map click.",
+    "Every parcel in Clark County has a unique APN (Assessor Parcel Number) that unlocks ownership and tax data.",
+    "Zoning overlays in GISMO show permitted uses, setbacks, and density limits before you make any offer.",
+    "The Assessor's office website cross-references GISMO data with ownership history and tax records.",
+    "Saving parcel searches and exporting data lets you build targeted outreach lists for direct mail."
+  ],
+  "content": "<h2>What is GISMO and Why Should You Use It?</h2><p>Clark County's GISMO (Geographic Information System Map Online) is the county's free, publicly accessible GIS portal. It lets anyone — developer, broker, investor, or landowner — look up detailed information on any parcel in unincorporated Clark County, including Las Vegas Strip corridor properties, Enterprise, Spring Valley, and beyond.</p><p>Most people overlook GISMO in favor of Zillow or CoStar. That's a mistake. GISMO gives you direct access to government-sourced data that commercial platforms often lag on or get wrong — including current ownership, legal descriptions, zoning designations, and parcel boundaries drawn to scale.</p><h2>Step 1: Access the Portal</h2><p>Go to <a href='https://maps.clarkcountynv.gov/openweb/' target='_blank' rel='noopener noreferrer'>maps.clarkcountynv.gov/openweb/</a>. The portal loads a satellite-backed map of Clark County with a search bar at the top. No login required — it's fully public.</p><p>The interface can feel slow on first load. Give it a moment. Once it's up, you'll see a map centered on the Las Vegas Valley with a toolbar on the left for layer controls and search options.</p><h2>Step 2: Search by Address or APN</h2><p>You have two main ways to find a parcel. The first is by address — type the property address into the search bar and GISMO will zoom to that location and highlight the parcel. The second is by APN (Assessor Parcel Number), which is a unique identifier assigned to every parcel in Clark County. APNs follow the format XXX-XX-XXX-XXX.</p><p>If you already know the APN from a prior search or from the Assessor's website, entering it directly is faster and more precise than an address search — especially for vacant land that may not have a recognized street address.</p><h2>Step 3: Click the Parcel to Pull Its Data</h2><p>Once you've located the parcel on the map, click directly on it. A popup will appear showing the parcel's basic attributes: APN, owner name, mailing address, legal description, acreage, and zoning designation.</p><p>This is where most of the actionable data lives. The owner's mailing address is particularly valuable — it's the address you'd use for direct mail outreach if you're trying to contact a landowner who doesn't have their property listed anywhere.</p><h2>Step 4: Understand the Zoning Designation</h2><p>Every parcel in unincorporated Clark County carries a zoning designation that controls what can be built there. Common designations include R-E (Rural Estates), C-1 and C-2 (commercial), M-1 and M-2 (industrial), and various residential designations like R-1 through R-4.</p><p>To confirm what a zoning designation allows, cross-reference it with Clark County's Unified Development Code (UDC), available at clarkcountynv.gov. The UDC spells out permitted uses, setbacks, height limits, floor-area ratios, and parking requirements for every zone.</p><h2>Step 5: Use Layer Controls for Additional Data</h2><p>GISMO's layer panel on the left side of the screen lets you toggle additional data overlays. Useful layers include flood zone boundaries (FEMA SFHA designations), utility infrastructure lines, aerial imagery from different years, and master plan land use designations.</p><p>Turning on the flood zone layer before evaluating any raw land parcel is a basic due diligence step. Properties in Special Flood Hazard Areas (Zone AE or AO) require flood insurance and often need costly grading solutions before development is feasible.</p><h2>Step 6: Export and Build Your Outreach List</h2><p>GISMO allows you to export parcel data for custom polygon areas you draw on the map. This is how serious land acquisitions teams build targeted APN lists. Draw a boundary around your target area — a specific corridor, a zip code, a radius around a new interchange — and export the parcel data. Cross-reference with the Assessor's ownership records to get mailing addresses, then run a direct mail campaign to those owners.</p><p>This approach is exactly how off-market land deals get sourced in Clark County. The data is public. The edge is knowing how to use it.</p>",
+  "faqs": [
+    {
+      "question": "Is GISMO free to use?",
+      "answer": "Yes. Clark County's GISMO portal is completely free and publicly accessible at maps.clarkcountynv.gov/openweb/. No login or account is required."
+    },
+    {
+      "question": "What is an APN in Clark County?",
+      "answer": "An APN (Assessor Parcel Number) is a unique identifier assigned to every parcel of land in Clark County. It follows the format XXX-XX-XXX-XXX and is used by the Assessor's office, title companies, and GIS systems to track ownership, tax records, and parcel boundaries."
+    },
+    {
+      "question": "Can GISMO show me who owns a vacant lot?",
+      "answer": "Yes. Clicking on any parcel in GISMO displays the owner's name and mailing address as recorded by the Clark County Assessor. This is particularly useful for identifying and contacting owners of vacant land directly."
+    }
+  ]
+}
