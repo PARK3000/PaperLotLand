@@ -206,7 +206,7 @@ export const JURISDICTIONS = [
 
 export const CLOSED_SALES = [
   { id: 1, title: 'Highway 160 Blue Diamond Pad — 3.81 Acres', type: 'Commercial', size: '3.81 acres', location: 'Blue Diamond', imageSrc: '/images/lots/lot-1.jpg', gisUrl: 'https://maps.clarkcountynv.gov/ow/?@719200,26714393,7' },
-  { id: 2, title: 'North Las Vegas Commercial Land — 2.06 Acres', type: 'Commercial', size: '2.06 acres', location: 'North Las Vegas', imageSrc: '/images/lots/lot-2.jpg', gisUrl: 'https://maps.clarkcountynv.gov/ow/?@780635,26790129,7' },
+  { id: 2, title: 'North Las Vegas Commercial Land — 7.06 Acres', type: 'Commercial', size: '7.06 acres', location: 'North Las Vegas', imageSrc: '/images/lots/lot-2.jpg', gisUrl: 'https://maps.clarkcountynv.gov/ow/?@780635,26790129,7' },
   { id: 3, title: 'Fremont Street Hotel Land — 0.46 Acres', type: 'Commercial', size: '0.46 acres', location: 'City of Las Vegas', imageSrc: '/images/lots/lot-3.jpg', gisUrl: 'https://maps.clarkcountynv.gov/ow/?@795692,26758223,9' },
   { id: 4, title: 'Southwest Land — 0.89 Acres', type: 'Raw Land', size: '0.89 acres', location: 'Southwest Las Vegas', imageSrc: '/images/lots/lot-4.jpg', gisUrl: 'https://maps.clarkcountynv.gov/ow/?@771256,26706960,9' },
   { id: 5, title: 'Northeast Mixed Use Land — 1.19 Acres', type: 'Mixed Use', size: '1.19 acres', location: 'Northeast Las Vegas', imageSrc: '/images/lots/lot-5.jpg', gisUrl: 'https://maps.clarkcountynv.gov/ow/?@806907,26789378,8' },
