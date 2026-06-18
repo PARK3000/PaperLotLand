@@ -9,6 +9,7 @@ import type { LeadSubmission, TrackingParams } from '@/lib/leads/types'
 import { captureServer } from '@/lib/analytics/server'
 import { getPageType } from '@/lib/analytics/page-type'
 import { SERVER_EVENTS } from '@/lib/analytics/events'
+import { sendEmail } from '@/lib/funnel-report/send-email'
 
 interface LeadResponse {
   success: boolean
@@ -281,6 +282,37 @@ export async function POST(request: NextRequest): Promise<NextResponse<LeadRespo
       if (submission.sessionToken) {
         try { await redis.del(`partial:${submission.sessionToken}`) }
         catch (err) { console.error('[Leads] Failed to clean up partial:', err) }
+      }
+    })
+
+    // Email notification — always fires regardless of n8n/Podio delivery
+    // status, so a new lead is never missed even if those destinations fail.
+    after(async () => {
+      const toEmail = process.env.REPORT_RECIPIENT_EMAIL || 'parker@paperlotland.com'
+      const fromEmail = process.env.REPORT_FROM_EMAIL || 'onboarding@resend.dev'
+      try {
+        await sendEmail({
+          to: toEmail,
+          from: fromEmail,
+          subject: `New Lead: ${submission.firstName || submission.name || 'Unknown'} ${submission.lastName || ''}`.trim(),
+          html: `
+            <h2>New Lead Submission</h2>
+            <p><strong>Name:</strong> ${submission.firstName || submission.name || ''} ${submission.lastName || ''}</p>
+            <p><strong>Email:</strong> ${submission.email || 'Not provided'}</p>
+            <p><strong>Phone:</strong> ${submission.phone || 'Not provided'}</p>
+            <p><strong>Inquiry:</strong> ${submission.address || ''}</p>
+            <p><strong>Role:</strong> ${submission.role || 'Not specified'}</p>
+            <p><strong>Lot Type:</strong> ${submission.lotType || 'Not specified'}</p>
+            <p><strong>Budget:</strong> ${submission.budget || 'Not specified'}</p>
+            <p><strong>Message:</strong> ${submission.message || 'None'}</p>
+            <p><strong>Form:</strong> ${submission.formId}</p>
+            <p><strong>Page:</strong> ${submission.pageUrl}</p>
+            <p><strong>Delivery status:</strong> ${status}</p>
+          `,
+        })
+        console.log('[Leads] Notification email sent for', leadId)
+      } catch (err) {
+        console.error('[Leads] Failed to send notification email:', err)
       }
     })
 
