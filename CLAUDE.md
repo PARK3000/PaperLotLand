@@ -209,3 +209,4 @@ npx tsx scripts/setup-db.ts
 - Named exports over default exports
 - `cn()` utility for conditional classes
 - No comments unless the WHY is non-obvious
+# Lead notifications enabled Thu Jun 18 18:12:37 UTC 2026
