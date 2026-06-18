@@ -2,7 +2,7 @@
   "crons": [
     {
       "path": "/api/cron/abandoned-leads",
-      "schedule": "* * * * *"
+      "schedule": "0 12 * * *"
     },
     {
       "path": "/api/cron/funnel-report",
