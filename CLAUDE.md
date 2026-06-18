@@ -210,3 +210,4 @@ npx tsx scripts/setup-db.ts
 - `cn()` utility for conditional classes
 - No comments unless the WHY is non-obvious
 # Lead notifications enabled Thu Jun 18 18:12:37 UTC 2026
+# Report recipient configured Thu Jun 18 18:47:24 UTC 2026
