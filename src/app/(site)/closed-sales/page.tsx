@@ -37,9 +37,6 @@ export default function ClosedSalesPage() {
                 <div className="relative h-56 bg-slate-100">
                   <Image src={lot.imageSrc} alt={lot.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1C3550]/70 to-transparent" />
-                  <span className="absolute bottom-3 left-3 inline-block rounded-full bg-[#C97D2E] px-2.5 py-0.5 text-xs font-semibold text-white">
-                    {lot.type}
-                  </span>
                   <span className="absolute top-3 right-3 inline-block rounded-full bg-emerald-500 px-2.5 py-0.5 text-xs font-semibold text-white">
                     Closed
                   </span>
