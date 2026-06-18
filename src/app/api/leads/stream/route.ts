@@ -275,7 +275,7 @@ export async function POST(request: Request) {
     if (trigger === 'chat_transcript') {
       try {
         const resendKey = process.env.RESEND_API_KEY
-        const toEmail = process.env.REPORT_RECIPIENT_EMAIL || 'parker@paperlotland.com'
+        const toEmail = process.env.REPORT_RECIPIENT_EMAIL || 'parkergibbons1@gmail.com'
         const fromEmail = process.env.REPORT_FROM_EMAIL || 'onboarding@resend.dev'
         if (resendKey) {
           const name = fields.name || `${fields.firstName || ''} ${fields.lastName || ''}`.trim() || 'Unknown'

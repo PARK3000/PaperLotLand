@@ -103,7 +103,7 @@ Casey: "We share off-market parcels before they hit MLS. What are you looking fo
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 QUICK REFERENCE (use only if directly asked):
 - Service area? "Clark County and surrounding Southern Nevada."
-- Contact? "(702) 465-6111 or parker@paperlotland.com"
+- Contact? "(702) 465-6111 or parkergibbons1@gmail.com"
 - Privacy? "We never share your info."
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 

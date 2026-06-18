@@ -288,7 +288,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<LeadRespo
     // Email notification — always fires regardless of n8n/Podio delivery
     // status, so a new lead is never missed even if those destinations fail.
     after(async () => {
-      const toEmail = process.env.REPORT_RECIPIENT_EMAIL || 'parker@paperlotland.com'
+      const toEmail = process.env.REPORT_RECIPIENT_EMAIL || 'parkergibbons1@gmail.com'
       const fromEmail = process.env.REPORT_FROM_EMAIL || 'onboarding@resend.dev'
       try {
         await sendEmail({
