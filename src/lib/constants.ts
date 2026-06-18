@@ -206,14 +206,14 @@ export const JURISDICTIONS = [
 
 export const CLOSED_SALES = [
   { id: 1, title: 'Highway 160 Blue Diamond Pad — 3.81 Acres', type: 'Commercial', size: '3.81 acres', location: 'Blue Diamond', imageSrc: '/images/lots/lot-1.jpg', gisUrl: 'https://maps.clarkcountynv.gov/ow/?@719200,26714393,7' },
-  { id: 2, title: 'Henderson Multifamily Site — 1.8 Acres', type: 'Multifamily', size: '1.8 acres', location: 'Henderson', imageSrc: '/images/lots/lot-2.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
-  { id: 3, title: 'Enterprise Commercial Corner — 0.9 Acres', type: 'Commercial', size: '0.9 acres', location: 'Enterprise', imageSrc: '/images/lots/lot-3.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
-  { id: 4, title: 'Spring Valley Residential — 12 Lots', type: 'Residential', size: '12 lots', location: 'Spring Valley', imageSrc: '/images/lots/lot-4.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
-  { id: 5, title: 'NLV Retail Pad — 1.1 Acres', type: 'Commercial', size: '1.1 acres', location: 'North Las Vegas', imageSrc: '/images/lots/lot-5.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
-  { id: 6, title: 'Unincorporated Clark — 22 Acres Raw', type: 'Raw Land', size: '22 acres', location: 'Clark County', imageSrc: '/images/lots/lot-6.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
-  { id: 7, title: 'Downtown LV Mixed-Use Pad', type: 'Mixed Use', size: '0.6 acres', location: 'City of Las Vegas', imageSrc: '/images/lots/lot-7.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
-  { id: 8, title: 'Henderson Industrial — 8.3 Acres', type: 'Industrial', size: '8.3 acres', location: 'Henderson', imageSrc: '/images/lots/lot-8.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
-  { id: 9, title: 'NLV Flex / Warehouse Site', type: 'Industrial', size: '3.5 acres', location: 'North Las Vegas', imageSrc: '/images/lots/lot-9.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
+  { id: 2, title: 'North Las Vegas Commercial Land — 2.06 Acres', type: 'Commercial', size: '2.06 acres', location: 'North Las Vegas', imageSrc: '/images/lots/lot-2.jpg', gisUrl: 'https://maps.clarkcountynv.gov/ow/?@780635,26790129,7' },
+  { id: 3, title: 'Fremont Street Hotel Land — 0.46 Acres', type: 'Commercial', size: '0.46 acres', location: 'City of Las Vegas', imageSrc: '/images/lots/lot-3.jpg', gisUrl: 'https://maps.clarkcountynv.gov/ow/?@795692,26758223,9' },
+  { id: 4, title: 'Southwest Land — 0.89 Acres', type: 'Raw Land', size: '0.89 acres', location: 'Southwest Las Vegas', imageSrc: '/images/lots/lot-4.jpg', gisUrl: 'https://maps.clarkcountynv.gov/ow/?@771256,26706960,9' },
+  { id: 5, title: 'Northeast Mixed Use Land — 1.19 Acres', type: 'Mixed Use', size: '1.19 acres', location: 'Northeast Las Vegas', imageSrc: '/images/lots/lot-5.jpg', gisUrl: 'https://maps.clarkcountynv.gov/ow/?@806907,26789378,8' },
+  { id: 6, title: 'Industrial Automotive Repair Shop — 0.25 Acres', type: 'Industrial', size: '0.25 acres', location: 'City of Las Vegas', imageSrc: '/images/lots/lot-6.jpg', gisUrl: 'https://maps.clarkcountynv.gov/ow/?@796902,26760260,9' },
+  { id: 7, title: 'Industrial Building on the Strip — 2,400 Sq Ft', type: 'Industrial', size: '2,400 sq ft', location: 'Las Vegas Strip', imageSrc: '/images/lots/lot-7.jpg', gisUrl: 'https://maps.clarkcountynv.gov/ow/?@778849,26754806,9' },
+  { id: 8, title: '20+ Unit Townhome Site', type: 'Multifamily', size: '20+ units', location: 'Las Vegas', imageSrc: '/images/lots/lot-8.jpg', gisUrl: 'https://maps.clarkcountynv.gov/ow/?@756755,26801778,9' },
+  { id: 9, title: '6 Unit Single Family Ranch Site', type: 'Residential', size: '6 units', location: 'Las Vegas', imageSrc: '/images/lots/lot-9.jpg', gisUrl: 'https://maps.clarkcountynv.gov/ow/?@773450,26792069,8' },
 ]
 
 export const TEAM = [
