@@ -205,7 +205,7 @@ export const JURISDICTIONS = [
 ]
 
 export const CLOSED_SALES = [
-  { id: 1, title: 'NLV Industrial Pad — 4.2 Acres', type: 'Industrial', size: '4.2 acres', location: 'North Las Vegas', imageSrc: '/images/lots/lot-1.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
+  { id: 1, title: 'Highway 160 Blue Diamond Pad — 3.81 Acres', type: 'Commercial', size: '3.81 acres', location: 'Blue Diamond', imageSrc: '/images/lots/lot-1.jpg', gisUrl: 'https://maps.clarkcountynv.gov/ow/?@719200,26714393,7' },
   { id: 2, title: 'Henderson Multifamily Site — 1.8 Acres', type: 'Multifamily', size: '1.8 acres', location: 'Henderson', imageSrc: '/images/lots/lot-2.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
   { id: 3, title: 'Enterprise Commercial Corner — 0.9 Acres', type: 'Commercial', size: '0.9 acres', location: 'Enterprise', imageSrc: '/images/lots/lot-3.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
   { id: 4, title: 'Spring Valley Residential — 12 Lots', type: 'Residential', size: '12 lots', location: 'Spring Valley', imageSrc: '/images/lots/lot-4.jpg', gisUrl: 'https://maps.clarkcountynv.gov/openweb/' },
