@@ -11,6 +11,7 @@ import { getPageType } from '@/lib/analytics/page-type'
 import { SERVER_EVENTS } from '@/lib/analytics/events'
 import { sendEmail } from '@/lib/funnel-report/send-email'
 import { upsertBuyerFromLead } from '@/lib/admin/buyers'
+import { BUSINESS } from '@/lib/constants'
 
 interface LeadResponse {
   success: boolean
@@ -314,6 +315,42 @@ export async function POST(request: NextRequest): Promise<NextResponse<LeadRespo
         console.log('[Leads] Notification email sent for', leadId)
       } catch (err) {
         console.error('[Leads] Failed to send notification email:', err)
+      }
+    })
+
+    // Buyer-facing confirmation email — sent to the person who submitted
+    // the form, regardless of n8n/Podio delivery status, so they always
+    // get an immediate response even if the back-office handoff failed.
+    after(async () => {
+      if (!submission.email) return
+      const fromEmail = process.env.REPORT_FROM_EMAIL || 'onboarding@resend.dev'
+      const firstName = submission.firstName || submission.name || ''
+      try {
+        await sendEmail({
+          to: submission.email,
+          from: fromEmail,
+          subject: `We've received your inquiry — ${BUSINESS.name}`,
+          html: `
+            <div style="font-family: Arial, Helvetica, sans-serif; max-width: 560px; margin: 0 auto;">
+              <h2 style="color: #1C3550; margin-bottom: 4px;">Thanks${firstName ? `, ${firstName}` : ''} — we've got your inquiry.</h2>
+              <p style="color: #334155; font-size: 15px; line-height: 1.6;">
+                We've received your submission to ${BUSINESS.name} and will follow up directly,
+                usually within 24 hours. If your inquiry matches a parcel we have available, we'll
+                reach out with details before it goes anywhere else.
+              </p>
+              <p style="color: #334155; font-size: 15px; line-height: 1.6;">
+                Have a deal or a question right now? Call us at
+                <a href="tel:${BUSINESS.phone}" style="color: #C97D2E; font-weight: 600; text-decoration: none;">${BUSINESS.phoneDisplay}</a>.
+              </p>
+              <p style="color: #334155; font-size: 15px; line-height: 1.6; margin-top: 24px;">
+                — The ${BUSINESS.name} Team
+              </p>
+            </div>
+          `,
+        })
+        console.log('[Leads] Buyer confirmation email sent for', leadId)
+      } catch (err) {
+        console.error('[Leads] Failed to send buyer confirmation email:', err)
       }
     })
 
