@@ -10,6 +10,7 @@ import { captureServer } from '@/lib/analytics/server'
 import { getPageType } from '@/lib/analytics/page-type'
 import { SERVER_EVENTS } from '@/lib/analytics/events'
 import { sendEmail } from '@/lib/funnel-report/send-email'
+import { upsertBuyerFromLead } from '@/lib/admin/buyers'
 
 interface LeadResponse {
   success: boolean
@@ -313,6 +314,29 @@ export async function POST(request: NextRequest): Promise<NextResponse<LeadRespo
         console.log('[Leads] Notification email sent for', leadId)
       } catch (err) {
         console.error('[Leads] Failed to send notification email:', err)
+      }
+    })
+
+    // Auto-import into the Buyers (disposition) list — always fires
+    // regardless of delivery status, keyed by email so repeat leads
+    // update the existing buyer instead of creating duplicates.
+    after(async () => {
+      try {
+        const name = [submission.firstName || submission.name, submission.lastName].filter(Boolean).join(' ').trim()
+        const buyer = await upsertBuyerFromLead({
+          name: name || undefined,
+          email: submission.email,
+          phone: submission.phone,
+          role: submission.role,
+          lotType: submission.lotType,
+          budget: submission.budget,
+          message: submission.message,
+          leadDate: new Date(timestamp).toISOString(),
+          formId: submission.formId,
+        })
+        if (buyer) console.log('[Leads] Buyer upserted for', leadId, buyer.id)
+      } catch (err) {
+        console.error('[Leads] Failed to upsert buyer:', err)
       }
     })
 
