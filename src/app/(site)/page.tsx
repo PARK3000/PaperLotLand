@@ -111,7 +111,7 @@ export default async function HomePage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#1C3550] mb-3">Closed Sales</h2>
             <p className="text-lg text-slate-500 max-w-2xl mx-auto">
-              A sample of off-market land deals closed across the Las Vegas Valley. Click any parcel to view GIS data.
+              Check out some of our closed off-market land deals across the Las Vegas Valley. Click on the parcel to link to the Clark County GIS map.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
