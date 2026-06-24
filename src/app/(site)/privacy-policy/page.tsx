@@ -281,6 +281,29 @@ export default function PrivacyPolicyPage() {
                 </p>
               </div>
 
+              {/* SMS Messaging */}
+              <div className="mt-12">
+                <h2 className="text-2xl font-bold text-[var(--color-text)]">
+                  SMS / Text Message Communications
+                </h2>
+                <p className="mt-4 text-[var(--color-text-light)]">
+                  Land Value LLC (operating as PaperLotLand) sends SMS messages only to individuals who have explicitly opted in. Opt-in occurs when a recipient scans a QR code on a direct-mail postcard sent by Land Value LLC, visits the offer landing page at <strong>offers.paperlotland.com</strong>, enters their phone number, and taps one of the consent buttons on that page.
+                </p>
+                <p className="mt-4 text-[var(--color-text-light)]">
+                  By opting in, you consent to receive SMS messages from Land Value LLC regarding your cash offer, including offer details and follow-up communications. Message frequency varies. Message and data rates may apply.
+                </p>
+                <p className="mt-4 font-semibold text-[var(--color-text)]">
+                  To opt out:
+                </p>
+                <ul className="mt-4 list-disc space-y-2 pl-6 text-[var(--color-text-light)]">
+                  <li>Reply <strong>STOP</strong> to any SMS message at any time to unsubscribe immediately.</li>
+                  <li>Reply <strong>HELP</strong> for assistance, or contact us at (702) 465-6111.</li>
+                </ul>
+                <p className="mt-4 text-[var(--color-text-light)]">
+                  We do not share your phone number or SMS opt-in data with third parties for their own marketing purposes. Your information is used solely to deliver the offer and related communications from Land Value LLC.
+                </p>
+              </div>
+
               {/* CAN-SPAM Act */}
               <div className="mt-12">
                 <h2 className="text-2xl font-bold text-[var(--color-text)]">
@@ -339,15 +362,20 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <div className="mt-6 space-y-2 text-[var(--color-text-light)]">
                   <p className="font-semibold text-[var(--color-text)]">
-                    PaperLotLand
+                    Land Value LLC (dba PaperLotLand)
                   </p>
-                  <p>Las Vegas, NV</p>
+                  <p>8645 Bermuda Rd, Las Vegas, NV 89123</p>
+                  <p>
+                    <a href="tel:+17024656111" className="text-[var(--color-primary)] hover:underline">
+                      (702) 465-6111
+                    </a>
+                  </p>
                   <p>
                     <a
-                      href="mailto:info@paperlotland.com"
+                      href="mailto:parkergibbons1@gmail.com"
                       className="text-[var(--color-primary)] hover:underline"
                     >
-                      info@paperlotland.com
+                      parkergibbons1@gmail.com
                     </a>
                   </p>
                 </div>
@@ -355,7 +383,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Last updated */}
               <p className="mt-8 text-sm text-[var(--color-text-light)]">
-                Last updated: February 2026
+                Last updated: June 2026
               </p>
             </div>
           </div>

@@ -58,6 +58,14 @@ export default function AboutPage() {
               </li>
             </ul>
 
+            <h2 className="text-2xl font-bold text-[#1C3550] mb-4 mt-10">How PaperLotLand Is Structured</h2>
+            <p className="text-slate-600 leading-relaxed mb-6">
+              PaperLotLand operates on two sides of the land business. On the <strong>disposition side</strong>, PaperLotLand is the marketing and broker network — connecting developers, brokers, and investors with off-market parcels across Clark County. On the <strong>acquisition side</strong>, land is purchased directly from owners through <strong>Land Value LLC</strong>, 8645 Bermuda Rd, Las Vegas, NV 89123, which sources and buys vacant land parcels for cash.
+            </p>
+            <p className="text-slate-600 leading-relaxed mb-6">
+              Brokerage services are provided through Galindo Group Real Estate, Broker Joshua Galindo, License B.1001607.LLC, 4160 S Durango #120, Las Vegas, NV 89147. See full license details below.
+            </p>
+
             <h2 className="text-2xl font-bold text-[#1C3550] mb-4 mt-10">Who We Work With</h2>
             <p className="text-slate-600 leading-relaxed mb-4">
               The PaperLotLand network includes:

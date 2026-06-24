@@ -2,7 +2,7 @@
   "$schema": "./schemas/business.schema.json",
 
   "name": "PaperLotLand",
-  "legalName": "PaperLotLand LLC",
+  "legalName": "Land Value LLC",
   "type": "RealEstateBroker",
 
   "contact": {
