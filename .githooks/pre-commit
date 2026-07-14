@@ -1,0 +1,80 @@
+#!/usr/bin/env bash
+# Repo-tracked pre-commit hook.
+#
+# Activate once after clone:
+#   ./scripts/install-git-hooks.sh
+#
+# Checks:
+#   1. Shai-Hulud wallet-stealer malware signature (chronic re-injection,
+#      see incident 2026-05-22).
+#   2. .env.local corruption (literal \n appended, unclosed quotes,
+#      embedded control chars). See incident 2026-05-31:
+#      POSTHOG_PERSONAL_KEY had \n appended via bad paste → 401 for 17
+#      days. Audit found the same pattern in PODIO_FALLBACK_URL,
+#      PODIO_FULL_SUBMIT_URL, GITHUB_TOKEN — Podio lead fallback URLs
+#      malformed in production, leads silently lost.
+
+set +e
+
+# ── 1. Shai-Hulud malware signature scan ───────────────────────────────────
+PATTERNS="global\[.!.\][[:space:]]*=[[:space:]]*.[0-9]+-[0-9]+|_\$_1e42[[:space:]]*=[[:space:]]*\(function"
+STAGED=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.(js|mjs|cjs|ts|tsx|jsx)$' | grep -v -E '(^|/)(node_modules|\.next|dist|build|\.git)/')
+
+if [ -n "$STAGED" ]; then
+  HITS=$(echo "$STAGED" | xargs grep -lE "$PATTERNS" 2>/dev/null)
+  if [ -n "$HITS" ]; then
+    echo ""
+    echo "🚨 PRE-COMMIT BLOCKED — Shai-Hulud wallet-stealer malware signature detected:"
+    echo ""
+    echo "$HITS" | sed 's/^/  /'
+    echo ""
+    echo "This is the same malware family that re-injected itself on 2026-05-22."
+    echo "Almost always: a stale Claude/Cursor thread carrying poisoned context."
+    echo ""
+    echo "What to do:"
+    echo "  1. DO NOT --no-verify past this. The malware will reach production."
+    echo "  2. Clean the file: replace with the minimal legitimate config"
+    echo "  3. Abandon the agent thread you were working in — start a fresh one"
+    echo ""
+    exit 1
+  fi
+fi
+
+# ── 2. .env.local corruption audit ─────────────────────────────────────────
+# Runs on every commit (not just env file changes) because the corruption
+# happens out-of-band (paste into the file) and we want every commit to be
+# a checkpoint that the env is sane.
+REPO_ROOT=$(git rev-parse --show-toplevel)
+ENV_LOCAL="$REPO_ROOT/.env.local"
+AUDIT_SCRIPT="$REPO_ROOT/scripts/audit-env-vars.ts"
+
+if [ -f "$ENV_LOCAL" ] && [ -f "$AUDIT_SCRIPT" ]; then
+  # Capture output so we can decide whether to print it
+  AUDIT_OUT=$(cd "$REPO_ROOT" && npx tsx scripts/audit-env-vars.ts "$ENV_LOCAL" 2>&1)
+  AUDIT_EXIT=$?
+  if [ $AUDIT_EXIT -ne 0 ]; then
+    echo ""
+    echo "🚨 PRE-COMMIT BLOCKED — .env.local has corrupted values."
+    echo ""
+    echo "$AUDIT_OUT" | sed 's/^/  /'
+    echo ""
+    echo "What to do:"
+    echo "  1. Fix the listed lines in .env.local (see Fix: suggestions above)."
+    echo "  2. The exact same corruption is likely in your Vercel env vars too."
+    echo "     Re-run with --vercel to check production:"
+    echo "       npx tsx scripts/audit-env-vars.ts --vercel"
+    echo "  3. When re-setting a var, use printf NOT echo:"
+    echo "       printf \"<value>\" | vercel env add KEY production"
+    echo "     (echo appends a newline that triggers this exact bug.)"
+    echo ""
+    echo "To bypass JUST this check (DANGEROUS):"
+    echo "  SKIP_ENV_AUDIT=1 git commit ..."
+    echo ""
+    if [ "$SKIP_ENV_AUDIT" != "1" ]; then
+      exit 1
+    fi
+    echo "⚠️  SKIP_ENV_AUDIT=1 set — proceeding despite corruption."
+  fi
+fi
+
+exit 0
